@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/konewka",
+  "textures": {
+    "0": "hapeladdons:blocks/konewka"
+  }
+}

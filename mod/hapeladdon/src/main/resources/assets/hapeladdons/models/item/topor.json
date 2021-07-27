@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/topor",
+  "textures": {
+    "0": "hapeladdons:blocks/topor"
+  }
+}

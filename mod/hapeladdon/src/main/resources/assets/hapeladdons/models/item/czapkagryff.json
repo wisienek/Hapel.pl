@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/czapka_gryff",
+  "textures": {
+    "0": "hapeladdons:blocks/czapka_gryff"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "hapeladdons:custom/mandragorablok",
+  "textures": {
+    "all": "hapeladdons:blocks/dirt",
+    "particle": "hapeladdons:blocks/dirt",
+    "0": "hapeladdons:blocks/potatoes_stage_3",
+    "1": "hapeladdons:blocks/dirt",
+    "2": "hapeladdons:blocks/deadbush",
+    "3": "hapeladdons:blocks/log_big_oak_top",
+    "missing": "hapeladdons:blocks/"
+  }
+}

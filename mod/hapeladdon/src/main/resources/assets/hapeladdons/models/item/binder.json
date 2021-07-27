@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/card_binder",
+  "textures": {
+    "0": "hapeladdons:blocks/zamykanie"
+  }
+}

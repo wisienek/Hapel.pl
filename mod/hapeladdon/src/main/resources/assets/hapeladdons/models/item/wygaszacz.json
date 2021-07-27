@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/hapel_wygaszacz",
+  "textures": {
+    "0": "hapeladdons:blocks/hapel_wygaszacz"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/tiaraczarna",
+  "textures": {
+    "1": "hapeladdons:blocks/tiara_czarna"
+  }
+}

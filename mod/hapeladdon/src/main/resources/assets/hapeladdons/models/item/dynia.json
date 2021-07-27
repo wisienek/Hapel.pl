@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/dynia",
+  "textures": {
+    "0": "hapeladdons:blocks/dynia"
+  }
+}

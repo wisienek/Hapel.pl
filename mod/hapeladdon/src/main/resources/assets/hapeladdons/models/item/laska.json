@@ -1,0 +1,7 @@
+{
+  "parent": "hapeladdons:custom/laska",
+  "textures": {
+    "0": "hapeladdons:blocks/trzonek",
+    "1": "hapeladdons:blocks/handle"
+  }
+}

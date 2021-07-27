@@ -1,0 +1,37 @@
+{
+    "uczenklasa2":{
+        "role": [
+            "hogwart", 
+            "uczenklasa 2" 
+        ]
+    },
+    "hufflepuff":{
+        "role":[
+            "hufflepuff",
+            "hogwart" 
+        ]
+    },
+    "MinisterMagii":{
+        "role":[
+            "Ministerstwo magii",
+            "Dyrektorzy",
+            "Minister Magii",
+            "Honorowy członek wizengamotu"
+        ]
+    },
+    "prefektklasa3":{
+        "role":[
+            "hogwart",
+            "prefekt",
+            "klasa3"
+        ]
+    },
+    "KapitanPojedynkówGryffindor":{
+        "role":[
+            "Gryffindor",
+            "" 
+        ]
+    }
+    
+    
+}

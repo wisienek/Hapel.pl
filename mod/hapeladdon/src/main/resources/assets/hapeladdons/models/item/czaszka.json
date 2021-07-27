@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/czaszka",
+  "textures": {
+    "0": "hapeladdons:blocks/czaszka"
+  }
+}

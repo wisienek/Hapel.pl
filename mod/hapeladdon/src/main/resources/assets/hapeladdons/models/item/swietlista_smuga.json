@@ -1,0 +1,10 @@
+{
+  "parent": "hapeladdons:custom/miotla1",
+  "textures": {
+    "1": "hapeladdons:blocks/wool_colored_red",
+    "2": "hapeladdons:blocks/log_spruce",
+    "3": "hapeladdons:blocks/gb",
+    "4": "hapeladdons:blocks/iron_block",
+    "6": "hapeladdons:blocks/concrete_powder_red"
+  }
+}

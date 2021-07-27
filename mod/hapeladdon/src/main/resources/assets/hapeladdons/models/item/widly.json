@@ -1,0 +1,7 @@
+{
+  "parent": "hapeladdons:custom/widy",
+  "textures": {
+    "0": "hapeladdons:blocks/widly1",
+    "1": "hapeladdons:blocks/z1"
+  }
+}

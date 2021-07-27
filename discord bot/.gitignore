@@ -1,0 +1,8 @@
+desktop.ini
+.env
+/.vscode
+test.js
+.bash_history
+node_modules
+
+**/test.*

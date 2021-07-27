@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/czapka_slyth",
+  "textures": {
+    "0": "hapeladdons:blocks/czapka_slyth"
+  }
+}

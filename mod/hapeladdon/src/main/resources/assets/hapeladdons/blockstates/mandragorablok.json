@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "hapeladdons:mandragorablok"
+    },
+    "facing=north": {
+      "model": "hapeladdons:mandragorablok"
+    },
+    "facing=east": {
+      "model": "hapeladdons:mandragorablok",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hapeladdons:mandragorablok",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hapeladdons:mandragorablok",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "hapeladdons:custom/kosa",
+  "textures": {
+    "0": "hapeladdons:blocks/kosa"
+  }
+}
