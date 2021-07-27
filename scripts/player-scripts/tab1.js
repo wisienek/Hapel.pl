@@ -156,18 +156,6 @@ function interact(e) {
             }
         } else if (mainh.getDisplayName().indexOf("Plecak.") > -1) {
 
-            //if(e.player.getName()!="Przesladowca") 
-            //{ 
-            //    var x = "**"+e.player.getName()+"** spróbował otworzyć plecak !";
-            //    x=ang(x);
-            //    HTTP.post("https://discord.com/api/webhooks/798271986584780820/k6Yj3r1eZ26CP6TwALN8rmB-FHSnKyQU_cq-jM47g_3aFkE1Baxdpi1xzCORiCBbYU1e",{
-            //        "content": x,
-            //        "tts": false,
-            //    });
-            //
-            //    return e.player.message("[§cInfo§f] §7Chwila przerwy!");
-            //}
-
             var lastO = e.player.getTempdata().get("plecakO");
             if ( lastO && !Permission.has(e.player.getName(), "maxbans.ban") ) {
                 lastO = parseInt(lastO);
@@ -237,7 +225,7 @@ function interact(e) {
 
                     var x = "**" + e.player.getName() + "** Zainicjował " + mainh.getDisplayName().split(" ")[0] + " plecak z numerem: **" + nrp + "**";
                     x = ang(x);
-                    HTTP.post("https://discordapp.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry", {
+                    HTTP.post(passes.hooks.mainLog, {
                         "content": x,
                         "tts": false,
                     });
@@ -434,7 +422,7 @@ function interact(e) {
 
                         var x = "Gracz **" + e.player.getName() + "** Postawił kociołek w: **" + pos.getX() + " " + pos.getY() + " " + pos.getZ() + "**";
                         x = ang(x);
-                        HTTP.post("https://discordapp.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry", {
+                        HTTP.post(passes.hooks.mainLog, {
                             "content": x,
                             "tts": false,
                         });
@@ -513,7 +501,7 @@ function interact(e) {
                             e.player.giveItem(pmiotla);
                             var x = "Gracz **" + e.player.getName() + "** Zniszczył swoją miotłę: **" + mainh.getDisplayName() + "**, szansa: " + ((999 - w) / 10) + "% !";
                             x = ang(x);
-                            HTTP.post("https://discordapp.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry", {
+                            HTTP.post(passes.hooks.mainLog, {
                                 "content": x,
                                 "tts": false,
                             });
@@ -797,7 +785,7 @@ function customGuiButton(e) {
 
                 var x = "**" + e.player.getName() + "** Zmienił prawa plecaka **" + lore[0].replace(/§./g, "") + "** dla: " + player.getName();
                 x = ang(x);
-                HTTP.post("https://discordapp.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry", {
+                HTTP.post(passes.hooks.mainLog, {
                     "content": x,
                     "tts": false,
                 });

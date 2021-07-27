@@ -155,7 +155,7 @@ elkiRouter.route('/verify')
         });
         console.info(`${user} weryfikował eliksir ${id}, pile:${pile}, pdata:${pdata}, cena: ${cena}`);
         
-        axios.post("https://discordapp.com/api/webhooks/730401458813665312/hMvfOnZ4jye7K9G8jNegC-r34zydsUa7GKRo-k_odPrE1E136TVEcsfup1rI0MculmUa", {
+        axios.post( process.env.elkipost, {
             "content": `[WEB] **${user}** weryfikowal eliksir gracza <@${gosc}> \`${id}\`\n\`\`\`-- Ile: ${pile || 4}\n-- Data: ${pdata || 14}\n-- Cena: ${cena}\`\`\` `,
             "tts": false,
         });
@@ -175,7 +175,7 @@ elkiRouter.route('/verify')
         .catch(er=> {
             console.error(`Error w fetchowaniu usera na discordzie ${er}`);
         });
-        axios.post("https://discordapp.com/api/webhooks/730401458813665312/hMvfOnZ4jye7K9G8jNegC-r34zydsUa7GKRo-k_odPrE1E136TVEcsfup1rI0MculmUa", {
+        axios.post( process.env.elkipost, {
             "content": `[WEB] **${user}** weryfikowal *negatywnie* eliksir gracza <@${gosc}> \`${id}\` !`,
             "tts": false,
         });

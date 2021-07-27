@@ -33,7 +33,7 @@ function role(e) {
                         executeCommand("traderlog " + e.player.getDisplayName() + " kupil " + e.sold.getStackSize() + "x " + e.sold.getDisplayName() + " za " + curr);
                         var x = e.player.getDisplayName() + " kupil " + e.sold.getStackSize() + "x " + e.sold.getDisplayName() + " za " + curr;
                         x=ang(x);
-                        HTTP.post("https://discordapp.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry",{
+                        HTTP.post(passes.hooks.mainLog,{
                             "content": x,
                             "tts": false,
                         });

@@ -902,7 +902,7 @@ function customGuiButton(e) {
             e.player.message("[§cAdmin§f] §7Dodano nową kartę!");
 
             var x = ang("Moderator **" + e.player.getName() + "** Dodał kartę czarodziejów:\n\`\`\`Typ: " + typ + "\nNumer: " + top + "\nNazwa: " + nazwa + "\nOpis: " + opis + "\`\`\`");
-            var url = "https://discordapp.com/api/webhooks/765634963868483625/4yVEwFAyMTazw7S885Cn1BlQUcTWe_fL86DiBG9DPdUGOvnxb-7LcHYFB2eJBuZqMuG1";
+            var url = passes.hooks.karty;
 
             var test = sqlPut('INSERT INTO karty(numer, typ, nazwa, opis) VALUES (' + top + ', "' + typ + '", "' + nazwa + '", "' + opis + '");');
             if (test.error) {
@@ -959,7 +959,7 @@ function customGuiButton(e) {
 
             e.player.message("[§cAdmin§f] §7Zmieniono kartę!");
             var x = ang("Moderator **" + e.player.getName() + "** zmienił kartę: \n```Nazwa: " + path[2] + " -> " + current.name + " \nTyp: " + path[0] + " -> " + typ + " \nOpis: " + edit.opis + " -> " + current.opis + "```");
-            var url = "https://discordapp.com/api/webhooks/765634963868483625/4yVEwFAyMTazw7S885Cn1BlQUcTWe_fL86DiBG9DPdUGOvnxb-7LcHYFB2eJBuZqMuG1";
+            var url = passes.hooks.karty;
 
             var test = sqlPut('UPDATE karty SET typ="' + typ + '", nazwa="' + nazwa + '", opis="' + opis + '" WHERE numer=' + top + ';');
             if (test.error) {
@@ -996,7 +996,7 @@ function customGuiButton(e) {
             temp.remove("edit");
 
             var x = ang("Moderator **" + e.player.getName() + "** Usunął kartę czarodziejów:\n\`\`\`Typ: " + remove[0] + "\nNumer: " + current.numer + "\nNazwa: " + current.name + "\nOpis: " + current.opis + "\`\`\`");
-            var url = "https://discordapp.com/api/webhooks/765634963868483625/4yVEwFAyMTazw7S885Cn1BlQUcTWe_fL86DiBG9DPdUGOvnxb-7LcHYFB2eJBuZqMuG1";
+            var url = passes.hooks.karty;
 
             var test = sqlPut('DELETE FROM karty WHERE numer=' + top + ';');
             if (test.error) {
@@ -1334,7 +1334,7 @@ function customGuiButton(e) {
                 e.player.dropItem(item).setOwner(e.player.getName());
 
                 var x = "Gracz **" + e.player.getName() + "** Kupił *" + ile + "x " + item.getDisplayName().replace(/§./g, "") + "* za **" + cena + "** knutów, ticket (\`" + wer.id + "\`)";
-                HTTP.post("https://discord.com/api/webhooks/801091000604557352/edoLYp4nDnRwUrphU06JK_9tM5VTjW1JvtMqpbJf_SxoW4fVNNfVnJS2kPYjYSxyXX5f", {
+                HTTP.post(passes.hooks.cennik, {
                     tts: false,
                     content: ang(x)
                 });
@@ -1387,7 +1387,7 @@ function customGuiButton(e) {
                 }
 
                 hook = JSON.parse(ang(JSON.stringify(hook)))
-                HTTP.post("https://discord.com/api/webhooks/801091000604557352/edoLYp4nDnRwUrphU06JK_9tM5VTjW1JvtMqpbJf_SxoW4fVNNfVnJS2kPYjYSxyXX5f", hook);
+                HTTP.post(passes.hooks.cennik, hook);
 
                 return gui14(e);
             } catch (er) {
@@ -1502,7 +1502,7 @@ function customGuiButton(e) {
                 }
 
                 var x = JSON.parse(ang(JSON.stringify(hook)))
-                HTTP.post("https://discord.com/api/webhooks/801091000604557352/edoLYp4nDnRwUrphU06JK_9tM5VTjW1JvtMqpbJf_SxoW4fVNNfVnJS2kPYjYSxyXX5f", x);
+                HTTP.post(passes.hooks.cennik, x);
 
                 e.player.message("[§Cennik§f] §7Wyceniono ticket o id §e" + wer.id + "§7!");
                 return gui14(e, "Edytowanie");
@@ -1598,7 +1598,7 @@ function customGuiButton(e) {
             }
 
             var x = JSON.parse(ang(JSON.stringify(hook))) //ang( "Gracz **"+e.player.getName()+"** Wysłał ticket:\n\`\`\`Nazwa: "+n+"\nOpis: "+o+"\nTagi: "+t+"\nOgólnodostępne: "+ d + "\`\`\`" );
-            HTTP.post("https://discord.com/api/webhooks/801091000604557352/edoLYp4nDnRwUrphU06JK_9tM5VTjW1JvtMqpbJf_SxoW4fVNNfVnJS2kPYjYSxyXX5f", x);
+            HTTP.post(passes.hooks.cennik, x);
 
             e.player.message("[§cCennik§f] §7Wysłano ticket: §e" + n);
             return gui15(e);
@@ -1868,7 +1868,7 @@ function customGuiButton(e) {
             }
 
             var x = ang("**" + e.player.getName() + "** Pobrał plik na serwer (`Hapel`): \n<" + link + ">\n`" + (path + link1) + "`");
-            var url = "https://discord.com/api/webhooks/775419317495267338/DpTRPOEibG5gkgJKbBZEVqiiuQ4FfpXpRAS7wyk5mPU4druK6j4520mwhxBkpQjtAK6B";
+            var url = passes.hooks.dev;
             HTTP.post(url, {
                 "content": x,
                 "tts": false,
@@ -1901,7 +1901,7 @@ function customGuiButton(e) {
                 f.renameTo(new java.io.File(path));
 
                 var y = ang("**" + e.player.getName() + "** Usunął plik (`Hapel`):\n`" + x + "`");
-                var url = "https://discord.com/api/webhooks/775419317495267338/DpTRPOEibG5gkgJKbBZEVqiiuQ4FfpXpRAS7wyk5mPU4druK6j4520mwhxBkpQjtAK6B";
+                var url = passes.hooks.dev;
                 HTTP.post(url, {
                     "content": y,
                     "tts": false,
@@ -1935,7 +1935,7 @@ function customGuiButton(e) {
                 f.renameTo(new java.io.File(path));
 
                 var x = ang("**" + e.player.getName() + "** zmienił nazwę pliku (`Hapel`):\n`" + path + "`\n`" + oldn + "` -> `" + newn + "`");
-                var url = "https://discord.com/api/webhooks/775419317495267338/DpTRPOEibG5gkgJKbBZEVqiiuQ4FfpXpRAS7wyk5mPU4druK6j4520mwhxBkpQjtAK6B";
+                var url = passes.hooks.dev;
                 HTTP.post(url, {
                     "content": x,
                     "tts": false,
@@ -2354,11 +2354,10 @@ function post(bool, txt) {
     var x = txt
     x = ang(x);
     var url;
-    //https://discord.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry
     if (bool) {
-        url = 'https://discordapp.com/api/webhooks/744260426770022501/yDs_1o0CjdPTWOkeT0vLfintmcJBNuoCxNfWJDHmPKczhrZ8_vWwH7nFdG-PizufyuCx';
+        url = passes.hooks.elkiLog;
     } else {
-        url = "https://discordapp.com/api/webhooks/730401458813665312/hMvfOnZ4jye7K9G8jNegC-r34zydsUa7GKRo-k_odPrE1E136TVEcsfup1rI0MculmUa";
+        url = passes.hooks.elki;
     }
     HTTP.post(url, {
         "content": x,

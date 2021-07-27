@@ -221,7 +221,7 @@ function customGuiButton(e) {
                     var x =  e.player.getName()+" kupił: "+ keys[i] +" (" + koszyk[ keys[i] ].ilosc + koszyk[ keys[i] ].jednostka+") za **"+ Math.ceil(koszyk[ keys[i] ].cena) +"** knutów";
                     if(Math.ceil(koszyk[ keys[i] ].cena) >= 10000){ x+= "\n@everyone" }
                     x=ang(x);
-                    HTTP.post("https://discordapp.com/api/webhooks/734552958682923088/BbJM-s-RTw8GK8X7HTX3nxOsHZjv94VWmkNhXyyGdqDqYFp7Bc6lSDwpHPspZnHw2VpN",{
+                    HTTP.post(passes.hooks.zielarz,{
                         "content": x,
                         "tts": false,
                     });
@@ -360,7 +360,7 @@ function customGuiButton(e) {
             var x = e.player.getName()+" Sprzedał "+sprzedaje.nazwa+" ("+sprzedaje.ilosc+jednostka+") za **"+ Math.floor(wart * sprzedaje.ilosc) +"** knutów";
             if( Math.floor(wart * sprzedaje.ilosc) >= 10000 ) { x+= "\n@everyone" }
             x=ang(x);
-            HTTP.post("https://discordapp.com/api/webhooks/734552958682923088/BbJM-s-RTw8GK8X7HTX3nxOsHZjv94VWmkNhXyyGdqDqYFp7Bc6lSDwpHPspZnHw2VpN",{
+            HTTP.post(passes.hooks.zielarz,{
                 "content": x,
                 "tts": false,
             });

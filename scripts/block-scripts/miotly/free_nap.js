@@ -36,7 +36,7 @@ function interact(e){
                 e.player.giveItem(item);
                 var x = "**"+e.player.getName()+"** Naprawił miotłę [automat]: **"+name+"** !";
                 x=ang(x);
-                HTTP.post("https://discordapp.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry",{
+                HTTP.post(passes.hooks.mainLog,{
                     "content": x,
                     "tts": false,
                 });

@@ -940,7 +940,7 @@ function customGuiScroll(e){
 
                         var x = ver.gracz+" Wysłał eliksir do weryfikacji! kod: \`"+r+"\`, nazwa: *"+ver.nazwa+"*, cena: *"+ver.cena+"* knutów\nKociołek: "+(kociolek || "Brak danych");
                         x=ang(x);
-                        HTTP.post("https://discordapp.com/api/webhooks/730401458813665312/hMvfOnZ4jye7K9G8jNegC-r34zydsUa7GKRo-k_odPrE1E136TVEcsfup1rI0MculmUa",{
+                        HTTP.post( passes.hooks.elki ,{
                             "content": x,
                             "tts": false,
                         });
@@ -1186,7 +1186,7 @@ function update(e){
 
     var scripts = nbt.getList("Scripts", nbt.getListType("Scripts"))[0];
     var sl = [];
-    var requiredScripts = [ 'kociolek.js', 'postreq.js', 'sql_main.js', 'str_mani.js', 'pass.js' ];
+    var requiredScripts = [ 'kociolek.js', 'postreq.js', 'sql_main.js', 'str_mani.js', 'passesjs' ];
 
     for(var i=0; i < requiredScripts.length; i++){
         var test = e.API.stringToNbt('{}');

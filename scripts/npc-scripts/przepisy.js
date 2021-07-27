@@ -267,7 +267,7 @@ function customGuiButton(e) {
 
                     var x =  "**"+e.player.getName()+"** odebrał wypłatę za przepisy:  **"+cena+"** knutów!";
                     x = ang(x);
-                    HTTP.post("https://discord.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry", {
+                    HTTP.post(passes.hooks.przepisy, {
                         "content": x,
                         "tts": false,
                     });
@@ -325,7 +325,7 @@ function customGuiScroll(e){
     
                         var x =  "**"+e.player.getName()+"** Kupił przepis *"+eliksir.id+"* !\n\`\`\`Autor: "+eliksir.autor+" \nEliksir: "+eliksir.eliksir+" \nCena: "+eliksir.cena+" \n\`\`\`";
                         x = ang(x);
-                        HTTP.post("https://discord.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry", {
+                        HTTP.post(passes.hooks.przepisy, {
                             "content": x,
                             "tts": false,
                         });
@@ -373,7 +373,7 @@ function customGuiScroll(e){
 
                 var x =  "Nowy przepis!\n\`\`\`Autor: "+przepis.autor+" \nEliksir: "+przepis.eliksir+" \nCena: "+przepis.cena+" \n\`\`\`";
                 x = ang(x);
-                HTTP.post("https://discord.com/api/webhooks/666382348262309894/V7UiHY3eRewJz4wD_7pyR7uYRv8VgYmwLsr9QCSIv6EID-PMPeeDz4OciQ5Ina6R6Kry", {
+                HTTP.post(passes.hooks.przepisy, {
                     "content": x,
                     "tts": false,
                 });
