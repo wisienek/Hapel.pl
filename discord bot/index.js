@@ -69,7 +69,9 @@ app.use( passport.session() );
 
 app.use('/api', Router);
 
-app.listen( 80 );
+app.listen( 80, () => {
+    console.info(`Listening on: http://localhost:80/`);
+});
 
 app.get('*', (req, res)=>{
     res.sendFile( path.join(__dirname + '/strona/index.html') );

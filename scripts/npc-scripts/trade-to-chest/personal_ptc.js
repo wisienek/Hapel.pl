@@ -49,32 +49,34 @@ function role(e){
                 var chest1 = e.npc.world.getBlock(e.npc.getBlockX(), e.npc.getBlockY(), e.npc.getBlockZ());
                 var data = e.npc.getStoreddata();
                 var hook = data.get("webhook");
+                var pname = e.player.getDisplayName();
+                var s1Name = e.sold.getDisplayName().replace(/§./g, "").replace(/\&./g, "");
                     if(getsold(e.sold, chest1, e, 0)){
                         var curr="";
                         if(e.currency1){
-                            lookforitems(e.currency1,chest1,e,0);
+                            lookforitems( e.currency1, chest1, e, 0 );
                             curr+=e.currency1.getStackSize()+"x " + e.currency1.getDisplayName();
                             getCurr(e, e.currency1);
                         }
                         if(e.currency2){
-                            lookforitems(e.currency2,chest1,e,0);
+                            lookforitems( e.currency2, chest1, e, 0 );
                             if(curr.length>0){curr+=" "}
                               curr+=e.currency2.getStackSize()+"x " + e.currency2.getDisplayName();
-                            getCurr(e,e.currency2);
+                            getCurr(e, e.currency2);
                         }
                         if(hook){
-                            var x = "**"+e.player.getDisplayName() + "** kupil " + e.sold.getStackSize() + "x " + e.sold.getDisplayName().replace(/§./g, "").replace(/\&./g, "") + " za " + curr.replace(/§./g, "").replace(/\&./g, "");
+                            var x = "**"+ pname + "** kupil " + e.sold.getStackSize() + "x " + s1Name + " za " + curr.replace(/§./g, "").replace(/\&./g, "");
                             x=ang(x);
                             HTTP.post(hook,{
                                 "content": x,
                                 "tts": false,
                             });
                         }
-                        executeCommand("traderlog " + e.player.getDisplayName() + " kupil " + e.sold.getStackSize() + "x " + e.sold.getDisplayName() + " za " + curr);
+                        executeCommand("traderlog " + pname + " kupil " + e.sold.getStackSize() + "x " + e.sold.getDisplayName() + " za " + curr);
                     }else{
                         e.setCanceled(true);
                         if(hook){
-                            var x = "NPC: **"+e.npc.getName()+"** Nie ma towaru: **"+e.sold.getDisplayName().replace(/§./g, "").replace(/\&./g, "")+"** ("+e.sold.getStackSize()+")";
+                            var x = "NPC: **"+e.npc.getName()+"** Nie ma towaru: **"+s1Name+"** ("+e.sold.getStackSize()+")";
                             x=ang(x);
                             HTTP.post(hook,{
                                 "content": x,
