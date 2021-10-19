@@ -1,22 +1,30 @@
 {
-  "name": "poggbocik",
-  "version": "1.1.5",
-  "description": "",
+  "name": "hapelbot",
+  "version": "2.1.1",
+  "description": "bot for hapel.pl with api",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "set ENV=TESTING && jest",
+    "start": "set ENV=PRODUCTION && node index.js",
+    "dev": "set ENV=DEVELOPMENT && ts-node-dev --respawn --transpile-only --poll ./src/index.ts"
   },
   "author": "Woolf",
   "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/builders": "^0.6.0",
+    "@prisma/client": "^3.2.1",
+    "discord-api-types": "^0.23.1",
     "axios": "^0.21.1",
     "better-logging": "^3.5.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
-    "discord.js": "^12.5.3",
-    "discord.js-buttons": "^1.0.0",
-    "dotenv": "^6.2.0",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-ip": "^1.0.4",
     "express-mysql-session": "^2.1.6",
@@ -35,6 +43,10 @@
     "socks5-client": "^1.2.8"
   },
   "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "prisma": "^3.2.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4",
     "ws": "3.3.2"
   }
 }
