@@ -1,7 +1,7 @@
 import { Oczekujace } from ".prisma/client";
-import { MessageEmbed, Permissions } from "discord.js";
+import { MessageEmbed, Permissions, ApplicationCommandOptionType } from "discord.js";
 
-import { Command } from '../Interfaces';
+import { Command, OptionType } from '../Interfaces';
 
 
 export const command: Command = {
@@ -9,7 +9,7 @@ export const command: Command = {
     description: "Komenda do eliksirów",
     options: [
         {
-            type: "BOOLEAN",
+            type: OptionType.BOOLEAN,
             name: "lista",
             description: "czy wylistować elki?",
             required: true

@@ -1,6 +1,6 @@
 import { TextChannel } from "discord.js";
 
-import { Command } from '../Interfaces';
+import { Command, OptionType } from '../Interfaces';
 
 
 export const command: Command = {
@@ -9,13 +9,13 @@ export const command: Command = {
     onlyFor: ["272037067897307146", "381489843466928129"],
     options: [
         {
-            type: "CHANNEL",
+            type: OptionType.CHANNEL,
             name: "kanał",
             description: "Na jaki kanał napisać",
             required: true
         },
         {
-            type: "STRING",
+            type: OptionType.STRING,
             name: "msg",
             description: "Wiadomość",
             required: true
