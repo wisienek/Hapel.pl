@@ -1,7 +1,8 @@
+require('dotenv').config();
+
 const express = require('express');
 const passport = require('passport');
 const dcRouter = express.Router();
-
 
 const { bot } = require('../../bot');
 const { log } = require("./dclog");
@@ -22,7 +23,7 @@ dcRouter.get( '/', async (req, res) => {
                 {"id":"133227600746250240","name":"Hapel.pl 🎂 10 LAT","icon":"daacd31ec8342ca7960f84baf7771dbb","owner":false,"permissions":1475866199,"features":["ANIMATED_ICON","WELCOME_SCREEN_ENABLED","COMMUNITY","INVITE_SPLASH","NEWS"],"permissions_new":"110997532247"},
                 {"id":"583031361145667705","name":"Hapel.pl - IC","icon":"050a2c7c3ffd0d52d9ef8409e38b5294","owner":false,"permissions":2147483647,"features":["PREVIEW_ENABLED","WELCOME_SCREEN_ENABLED","COMMUNITY","NEWS","MEMBER_VERIFICATION_GATE_ENABLED"],"permissions_new":"137438953471"}
             ]
-        }) && log(`Załadowano dummy usera dla ||${ (ip == "193.188.199.2")? "Woolfa": ip }||`) && console.warn(`Załadowano dummy usera dla ${ip}`);
+        }) && log(`Załadowano dummy usera dla ||${ (ip == process.env.woolfip2 || ip == process.env.woolfip1)? "Woolfa": ip }||`) && console.warn(`Załadowano dummy usera dla ${ip}`);
 
 
     if( req.user ){
