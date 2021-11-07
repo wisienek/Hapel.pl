@@ -10,7 +10,7 @@
 var conn = Java.type("java.sql.Connection");
 var DriverManager = Java.type("java.sql.DriverManager");
 var slqe = Java.type("java.sql.SQLException");
-var urlp = "jdbc:mysql://195.78.66.161:3306/em411_cnpc";
+var urlp = "jdbc:mysql://185.242.134.76:3306/em411_cnpc";
 
 /*
     requires:
@@ -74,7 +74,7 @@ function addSkladnik(nazwa, typ, cena, ilosc, jednostka, dostępny){
 
     dostępny = dostępny || 1;
 
-    var query = 'INSERT INTO Składniki (nazwa, typ, cena, ilosc, jednostka, dostępny) VALUES ("'+escapeString(nazwa)+'", "'+typ+'", "'+cena+'", "'+ilosc+'", "'+jednostka+'", "'+dostępny+'"); ';
+    var query = 'INSERT INTO Skladniki (nazwa, typ, cena, ilosc, jednostka, dostępny) VALUES ("'+escapeString(nazwa)+'", "'+typ+'", "'+cena+'", "'+ilosc+'", "'+jednostka+'", "'+dostępny+'"); ';
 
     return sqlPut(query);
 }
@@ -84,7 +84,7 @@ function updateSkladnik(nazwa, args){
         return { error: "No arguments! {nazwa, typ, jednostka: string | cena: float, ilosc: int, dostępny: boolean}"}
     
     var keys = Object.keys(args);
-    var query = 'UPDATE Składniki SET ';
+    var query = 'UPDATE Skladniki SET ';
     for(var i=0; i<keys.length; i++){
         query += keys[i]+' = "'+ escapeString(args[ keys[i] ]) + '" ';
         if(i != keys.length-1) {query+=", "}
@@ -98,12 +98,12 @@ function removeSkladnik(nazwa){
     if(!nazwa)
         return { error: "No arguments: nazwa (varchar)"};
     
-    var query = "DELETE FROM Składniki WHERE nazwa='"+ escapeString(nazwa) +"'; ";
+    var query = "DELETE FROM Skladniki WHERE nazwa='"+ escapeString(nazwa) +"'; ";
     return sqlPut(query);
 }
 
 function getSkladnik(args){
-    var query = "SELECT * FROM Składniki ";
+    var query = "SELECT * FROM Skladniki ";
 
     if(args){
         if(args.typ){ query += 'WHERE typ="'+args.typ+'" '; }else 
@@ -115,10 +115,10 @@ function getSkladnik(args){
     return sqlGet(query);
 }
 
-// oczekujące elki
+// Oczekujace elki
 
 function getOczekujace(args){
-    var query = "SELECT * FROM Oczekujące ";
+    var query = "SELECT * FROM Oczekujace ";
 
     if(args){
         query += "WHERE ";
@@ -144,7 +144,7 @@ function updateOczekujace(id, args){
         return { error: "Arguments; id<varchar>, args{ odebrane (0/1), weryfikowane(3- czeka, 1- ok, 2- odrzucone) }" }
     
     var x = [];
-    var query = 'UPDATE Oczekujące SET ';
+    var query = 'UPDATE Oczekujace SET ';
     if(args.odebrane || args.odebrane == false){ x.push('odebrane = '+args.odebrane+' '); }
     if(args.data_odebrania){ x.push('data_odebrania="'+args.data_odebrania+'" ');}
     if(args.weryfikowane){ x.push('weryfikowane = '+args.weryfikowane+' '); }
@@ -167,7 +167,7 @@ function addOczekujace(id, eliksir, gracz, uuid, discord, przepis, cena, kociole
     if(cena)    { args[0] += ", cena";    args[1] += ', "'+cena+'"'; }
     if(kociolek){ args[0] += ", kociołek"; args[1] += ', "'+kociolek+'"';}
 
-    var query = 'INSERT INTO Oczekujące ('+args[0]+') VALUES ('+args[1]+'); ';
+    var query = 'INSERT INTO Oczekujace ('+args[0]+') VALUES ('+args[1]+'); ';
 
     return sqlPut(query);
 }
@@ -176,7 +176,7 @@ function removeOczekujace(id){
     if(!id)
         return { error: "No arguments: id (varchar)"};
     
-    var query = "DELETE FROM Oczekujące WHERE id='"+id+"'; ";
+    var query = "DELETE FROM Oczekujace WHERE id='"+id+"'; ";
     return sqlPut(query);
 }
 // zlane elki

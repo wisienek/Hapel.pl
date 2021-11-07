@@ -4,5 +4,8 @@ desktop.ini
 test.js
 .bash_history
 node_modules
+_old
 
 **/test.*
+
+./src/database/*

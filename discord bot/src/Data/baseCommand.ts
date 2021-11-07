@@ -1,7 +1,5 @@
 import { Permissions } from "discord.js";
-
 import { Command } from '../Interfaces';
-
 
 export const command: Command = {
     name: "test",

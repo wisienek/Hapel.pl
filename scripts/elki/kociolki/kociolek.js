@@ -1186,7 +1186,7 @@ function update(e){
 
     var scripts = nbt.getList("Scripts", nbt.getListType("Scripts"))[0];
     var sl = [];
-    var requiredScripts = [ 'kociolek.js', 'postreq.js', 'sql_main.js', 'str_mani.js', 'passesjs' ];
+    var requiredScripts = [ 'kociolek.js', 'postreq.js', 'sql_main.js', 'str_mani.js', 'passes.js' ];
 
     for(var i=0; i < requiredScripts.length; i++){
         var test = e.API.stringToNbt('{}');

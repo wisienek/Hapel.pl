@@ -11,6 +11,7 @@ function baseGui(e){
     gui.setBackgroundTexture("customnpcs:textures/gui/elki_e.png");
     return gui;
 }
+
 function interact(e){
     var item = e.player.getMainhandItem();
     var lore = item.getLore();
@@ -37,7 +38,6 @@ function interact(e){
             return e.player.message("[§cZielarz§f] §7Dodano do wymiany: §c"+ile+" "+name);
         }
     }
-
 
     return menu(e);
     //if(e.player.getName()=="Przesladowca" || e.player.getName()=="Woolf"){ return menu(e); }
@@ -203,10 +203,15 @@ function customGuiButton(e) {
             // zakup koszyk
             var pdata = e.player.getTempdata();
             var koszyk = pdata.get("koszyk");
+
             koszyk = JSON.parse(koszyk) || {};
+
             var cena = e.gui.getComponent(8).getText().split("§c§l")[1];
-            if(cena <= wallet(e.player.getName())){
-                if(!requestPayment(e.player.getName(), cena)) { return e.player.message("[§cZielarz§f] §7Coś poszło nie tak!")}
+
+            if( cena <= wallet(e.player.getName()) ){
+                if( !requestPayment(e.player.getName(), cena) ) 
+                    return e.player.message("[§cZielarz§f] §7Coś poszło nie tak!");
+                
                 var keys = Object.keys(koszyk);
                 if( keys.length == 0 )
                     return e.player.message("[§cZielarz§f] Brak przedmiotów w koszyku!");
@@ -389,7 +394,9 @@ function customGuiScroll(e){
             var nazwa = e.selection[0].split("§e")[1].split(" §7")[0];
 
             var skladnik = getSkladnik({ nazwa: nazwa });
-            if(!skladnik || skladnik.error || skladnik.result.length == 0){ return e.player.message("[§cDebugger§f] §7Coś poszło nie tak: "+skladnik.error) }
+            if( !skladnik || skladnik.error || skladnik.result.length == 0 )
+                return e.player.message("[§cDebugger§f] §7Coś poszło nie tak: "+ skladnik.error);
+
             skladnik = skladnik.result[0];
             var wart = (skladnik.cena / skladnik.ilosc) * ilosc;
 

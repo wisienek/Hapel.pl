@@ -5,9 +5,6 @@ import { PrismaClient } from "@prisma/client";
 import path from "path";
 import { readdirSync } from "fs";
 
-import dotenv from "dotenv";
-dotenv.config();
-
 class botClient extends Client {
     public commands: Collection<string, Command> = new Collection();
     public events: Collection<string, Event> = new Collection();
