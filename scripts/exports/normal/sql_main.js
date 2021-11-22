@@ -6,11 +6,10 @@
 /*
 */
 
-
 var conn = Java.type("java.sql.Connection");
 var DriverManager = Java.type("java.sql.DriverManager");
 var slqe = Java.type("java.sql.SQLException");
-var urlp = "jdbc:mysql://185.242.134.76:3306/em411_cnpc";
+var urlp = "jdbc:mysql://185.242.134.76:3306/em411_cnpc?useUnicode=true&characterEncoding=utf8";
 
 /*
     requires:
@@ -94,20 +93,20 @@ function updateSkladnik(nazwa, args){
     return sqlPut(query);
 }
 
-function removeSkladnik(nazwa){
-    if(!nazwa)
+function removeSkladnik( nazwa ){
+    if( !nazwa )
         return { error: "No arguments: nazwa (varchar)"};
     
     var query = "DELETE FROM Skladniki WHERE nazwa='"+ escapeString(nazwa) +"'; ";
     return sqlPut(query);
 }
 
-function getSkladnik(args){
+function getSkladnik( args ){
     var query = "SELECT * FROM Skladniki ";
 
-    if(args){
-        if(args.typ){ query += 'WHERE typ="'+args.typ+'" '; }else 
-        if(args.nazwa){ query += "WHERE nazwa LIKE '%"+ escapeString(args.nazwa) +"%' "; }
+    if( args ){
+        if( args.typ ){ query += 'WHERE typ="'+args.typ+'" '; }else 
+        if( args.nazwa ){ query += "WHERE nazwa LIKE '%"+ escapeString( args.nazwa ) +"%' "; }
     }
 
     query += "ORDER BY nazwa ASC;"
@@ -456,7 +455,9 @@ function getBagCopies(id){
 
 
 function sqlGet(query){
-    if(!query){ return { error: "No querry!" } }
+    if( !query ) 
+        return { error: "No querry!" }
+
     var conn = null;
     var result = {};
 
@@ -471,7 +472,10 @@ function sqlGet(query){
 
         st.close();
     }
-    catch (e) { result.error = e; }
+    catch (error) { 
+        print("SQL GET ERROR: " + error);
+        result.error = error; 
+    }
     finally { if (conn != null) { try { conn.close(); } catch (e) { } } }
     
     return result;
