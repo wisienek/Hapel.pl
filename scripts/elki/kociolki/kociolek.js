@@ -1,7 +1,9 @@
 var API = Java.type("noppes.npcs.api.NpcAPI").Instance();
-var npc;
+var KOCIOLEK;
 var pos;
 var version = "3.1.2021-4";
+
+var dev = false;
 
 /*
     Eliksir: {
@@ -23,17 +25,32 @@ function init(e){
     try{
         e.block.setModel("minecraft:cauldron");
         e.block.setHardness(1);
-        npc = e.block;
-        pos = npc.getPos();
+        KOCIOLEK = e.block;
+        pos = KOCIOLEK.getPos();
 
         var data = e.block.getStoreddata();
         var elk = data.get("elki");
         elk = JSON.parse(elk) || {};
         var change;
-        if(!elk.current){ elk.current = { list:[], wait:0, temp:0, ignis: false }; change = true; }
-        if(!elk.side){ elk.side = { list:[], wait:0, temp:0, ignis: false }; change = true; }
-        if(!elk.id){ elk.current.id = "Główny"; change = true; }
-        if(change){ data.put("elki", JSON.stringify(elk)); }
+
+        if(!elk.current){ 
+            elk.current = { list:[], wait:0, temp:0, ignis: false }; 
+            change = true; 
+        }
+
+        if(!elk.side){ 
+            elk.side = { list:[], wait:0, temp:0, ignis: false }; 
+            change = true; 
+        }
+
+        if(!elk.id){ 
+            elk.current.id = "Główny"; 
+            change = true; 
+        }
+
+        if(change){ 
+            data.put("elki", JSON.stringify(elk)); 
+        }
     
         if(data.get('update') != version){ update(e) }
     }
@@ -60,9 +77,9 @@ function interact(e) {
     try{
         //var mainh = e.player.getMainhandItem();
         //if(mainh.getDisplayName().indexOf("testera")>-1){
-            if( !npc || !pos ){
-                npc = e.block;
-                pos = npc.getPos();
+            if( !KOCIOLEK || !pos ){
+                KOCIOLEK = e.block;
+                pos = KOCIOLEK.getPos();
             }
             return gui1(e.player);
         //}else{
@@ -81,20 +98,22 @@ function baseGui(b){
 
         var x = gui.addLabel(56, "§c[P]", 265, 0, 30, 30);
 
-        if(!npc)
-            throw "Brak npc!";
+        if(!KOCIOLEK)
+            throw "Brak KOCIOLEK!";
 
-        var sdata = npc.getStoreddata();
+        var sdata = KOCIOLEK.getStoreddata();
         var elki = JSON.parse(sdata.get("elki"));
-        b?gui.setBackgroundTexture("customnpcs:textures/gui/elki_e.png"):gui.setBackgroundTexture("customnpcs:textures/gui/elki.png");
+
+        b ? gui.setBackgroundTexture("customnpcs:textures/gui/elki_e.png") : gui.setBackgroundTexture("customnpcs:textures/gui/elki.png");
+        
         gui.addTexturedButton(55, "", 256, 30, 30, 30, "customnpcs:textures/gui/ikonki/elki.png").setHoverText(["§7Przełącz kociołek", "§7Aktualny kociołek: §a"+ (elki.id || "Główny"), "§7" + (sdata.get("kociolek") || "Kociołek cynowy, Rozmiar 2") ]);
         if ( elki.side && elki.side.list.length > 0 ) { 
             gui.addButton(57, "§a[+]", 290, 40, 20, 20).setHoverText(["§7Dodaj drugi kociołek", "§7Do aktualnego"]); 
         }
     
-        sdata.get("przepis")? x.setHoverText([sdata.get("przepis")]): x.setHoverText(["§7Przepis..."]);
+        sdata.get("przepis") ? x.setHoverText([sdata.get("przepis")]) : x.setHoverText(["§7Przepis..."]);
 
-        if(elki.current && elki.current.wait > 0){
+        if( elki.current && elki.current.wait > 0 ){
             if(elki.current.wait > Date.now()){
                 var data = new Date(elki.current.wait);
                 var waitTo = "§c"+ data.getHours()+"§f:§a"+data.getMinutes()+"§f;§b"+data.getSeconds()+" §f(§d"+data.getDate()+"§f.§d"+(data.getMonth()+1)+"§f.§d"+data.getFullYear()+"§f)";
@@ -109,7 +128,7 @@ function baseGui(b){
     }
 }
 
-function gui1(player){
+function gui1(player) {
     //main gui
     var gui = baseGui();
     
@@ -154,7 +173,7 @@ function gui3(player, current, show){
     gui.addTexturedButton(105, "§aWyślij do weryfikacji", 90, 230, 80, 15, "customnpcs:textures/gui/pp_button.png");
     gui.addTexturedButton(106, "§cWylej", 175, 230, 80, 15, "customnpcs:textures/gui/pp_button.png");
 
-    var tmp = npc.getStoreddata().get('elki'); 
+    var tmp = KOCIOLEK.getStoreddata().get('elki'); 
     tmp = JSON.parse(tmp) || {};
     if(!current){
         if(tmp.current && tmp.current.list && tmp.current.list.length>0){
@@ -166,7 +185,7 @@ function gui3(player, current, show){
                 player.message("[§cEliksiry§f] §7Rozpoczęto tworzenie eliksiru!");
             }
             tmp.current = {name: "", list: [], wait: 0, temp: 0, ignis: false};
-            npc.getStoreddata().put('elki', JSON.stringify(tmp));
+            KOCIOLEK.getStoreddata().put('elki', JSON.stringify(tmp));
         }
     }
 
@@ -192,7 +211,7 @@ function gui6(player){
     gui.addTextField(104, 90, 80, 30, 15);
     gui.addLabel(154, "§3°C", 122, 80, 15, 15);
 
-    var ndata = npc.getStoreddata();
+    var ndata = KOCIOLEK.getStoreddata();
     var elki = ndata.get('elki');
     elki = JSON.parse(elki) || {};
 
@@ -232,7 +251,7 @@ function gui7(player, b, search){
     //dodawanie składnika
     var gui = baseGui(true);
 
-    if(!b){
+    if( !b ){
         gui.addLabel(9, "§1Wybierz typ składnika", 95, 0, 80, 20);
 
         gui.addTexturedButton(301, "§7Nieorganiczne", 40, 80, 80, 15, "customnpcs:textures/gui/pp_button.png");
@@ -245,19 +264,19 @@ function gui7(player, b, search){
     }
     else{
         gui.addLabel(9, "§1Wybierz Ilość i Składnik", 95, 0, 120, 20);
-        gui.addLabel(10, "§5"+b, 190, 20, 80, 20);
+        gui.addLabel(10, "§5" + b, 190, 20, 80, 20);
         gui.addLabel(19, "§4§l[UWAGA]", 5, 5, 80, 30).setHoverText(["§r§4Wpisz najpierw wartość potem kliknij dwukrotnie na składnik!"]);
 
-        var skladniki = getSkladnik({typ: b})
-        if(skladniki.error){
-            return e.player.message("[§cDebugger§f] §7Error, napisz do administracji! -"+skladniki.error);
+        var skladniki = getSkladnik({ typ: b });
+        if( skladniki.error ){
+            return e.player.message("[§cDebugger§f] §7Error, napisz do administracji! -" + skladniki.error);
         }
         skladniki = skladniki.result;
 
         var lista1=[];
-        for(var i=0; i<skladniki.length; i++){
-            if(search && skladniki[i].nazwa.toLowerCase().indexOf(search.toLowerCase())>-1){
-                if(skladniki[i].dostępny == true){
+        for( var i=0; i < skladniki.length; i++ ){
+            if( search && skladniki[i].nazwa.toLowerCase().indexOf(search.toLowerCase())>-1 ){
+                if( skladniki[i].dostępny == true ){
                     lista1.push(skladniki[i].nazwa+"  ["+skladniki[i].jednostka+"]");
                 }
             }else if(!search){
@@ -286,14 +305,14 @@ function gui8(player){
     //lista kroków
     var gui = baseGui(true);
 
-    var tmp = npc.getStoreddata().get('elki'); 
+    var tmp = KOCIOLEK.getStoreddata().get('elki'); 
     tmp = JSON.parse(tmp) || {};
     var lista = tmp.current.list || [];
 
     var cena = tmp.current.price || 0;
 
     gui.addLabel(9, "§1Aktualna lista kroków", 85, 10, 100, 20);
-    gui.addLabel(10, "§eCena: "+cena, 5, 10, 50, 20);
+    gui.addLabel(10, "§eCena: " + cena, 5, 10, 50, 20);
     gui.addLabel(11, "§3[I]", 230, 20, 15, 15).setHoverText(["§7Informacja o zaznaczonym kroku"]);
     gui.addScroll(43, 8, 45, 240, 180, lista);
 
@@ -311,7 +330,7 @@ function gui9(player, skladnik){
 
     gui.addLabel(9, "§1Modyfikacja składnika: §b"+skladnik.name+" "+skladnik.ile+" "+skladnik.jednostka, 40, 10, 200, 20);
     gui.addLabel(19, "§4[LM]", 10, 10, 20, 20).setHoverText(skladnik.akcje);
-    if(skladnik.typ=="eq"){
+    if( skladnik.typ=="eq" ){
         gui.addLabel(29, "§cSkładnik własny", 40, 30, 200, 20);
     }
 
@@ -442,7 +461,7 @@ function gui13(player, eliksir){
 function customGuiSlot(e){
     try{
 
-        if(!npc)
+        if(!KOCIOLEK)
             return print("Nie znaleziono egzekującego bloku!");
 
         switch ( e.slotId ){
@@ -456,7 +475,7 @@ function customGuiSlot(e){
                     }
                     zlane = zlane.result[0];
         
-                    var data = npc.getStoreddata();
+                    var data = KOCIOLEK.getStoreddata();
                     var elki = data.get("elki");
                     elki = JSON.parse(elki) || {};
                     elki.current = JSON.parse(zlane.json);
@@ -477,7 +496,7 @@ function customGuiSlot(e){
                             list.unshift("§aPrzepis: ");
                             list = list.join("\n§7◆ ");
                             
-                            var data = npc.getStoreddata();
+                            var data = KOCIOLEK.getStoreddata();
                             data.put("przepis", list);
                             e.player.message("[§cDebugger§f] §7Załadowano przepis!");
                         }
@@ -497,8 +516,10 @@ function customGuiSlot(e){
 }
 
 function customGuiButton(e) {
+    if(!e) return print("NO EVENT!!!!");
+
     try{
-        if(!npc)
+        if(!KOCIOLEK)
             throw "Nie znaleziono egzekującego bloku!";
 
         switch ( e.buttonId ){
@@ -597,7 +618,7 @@ function customGuiButton(e) {
             case 42: {/* etykieter           */gui13(e.player);break;}
             case 55:{
                 // zmień na side kociołek
-                var data = npc.getStoreddata();
+                var data = KOCIOLEK.getStoreddata();
                 var elki = JSON.parse(data.get("elki"));
 
                 if(elki.switch && Date.now() - elki.switch < 5000 ){
@@ -619,7 +640,7 @@ function customGuiButton(e) {
             }
             case 57:{
                 // dodaj eliksir z drugiego kociołka do aktualnego
-                var data = npc.getStoreddata();
+                var data = KOCIOLEK.getStoreddata();
                 var elki = JSON.parse(data.get("elki")) || {};
                 if(elki.side && elki.side.list.length > 0){
                     if(!elki.current.price){ elki.current.price = 0; }
@@ -645,7 +666,7 @@ function customGuiButton(e) {
                 item.setCustomName("§9Tajemniczy eliksir: "+r);
                 item.setLore(["§7Przedmiot jest tymczasowy","§7Przechowuje on informacje o tworzonym eliksirze.", "§7Możesz go wrzucić do kociołka aby dokończyć tworzenie!","§7Aby to zrobić kliknij w opcję: §2Dokończ eliksir", "§7I daj item do slotu"]);
                 
-                var tmp = npc.getStoreddata().get('elki');
+                var tmp = KOCIOLEK.getStoreddata().get('elki');
                 tmp = JSON.parse(tmp) || {};
                 if(!tmp.current || tmp.current.list.length==0){
                     return e.player.message("[§cEliksiry§f] §7Nie masz czego zlewać!");
@@ -658,8 +679,8 @@ function customGuiButton(e) {
 
                 pisz(e.player, "Zlał eliksir do butelki aby dokończyć go później");
                 tmp.current = { list:[], wait:0, temp: 0, ignis: false};
-                npc.getStoreddata().put('elki', JSON.stringify(tmp));
-                npc.getTimers().stop(1);
+                KOCIOLEK.getStoreddata().put('elki', JSON.stringify(tmp));
+                KOCIOLEK.getTimers().stop(1);
                 e.player.giveItem(item);
                 break;
             }
@@ -676,7 +697,7 @@ function customGuiButton(e) {
                     return e.player.message("[§cEliksiry§f] §7Możesz mieć tylko §c§l6§r§7 eliksirów na raz w tworzeniu!")
                 }
 
-                var current = JSON.parse(npc.getStoreddata().get("elki")) || {};
+                var current = JSON.parse(KOCIOLEK.getStoreddata().get("elki")) || {};
                 if(current.current.list && current.current.list.length < 2){
                     return e.player.message("[§cEliksiry§f] §7Kociołek jest pusty!");
                 }
@@ -685,21 +706,21 @@ function customGuiButton(e) {
             }
             case 106:{
                 //wylewanie elka
-                var tmp = npc.getStoreddata().get('elki');
+                var tmp = KOCIOLEK.getStoreddata().get('elki');
                 tmp = JSON.parse(tmp) || {};
                 if(tmp.current.list && tmp.current.list.length==0){
                     return e.player.message("[§cEliksiry§f] §7Kociołek jest pusty!");
                 }
                 tmp['current'] = {name: "", list: [], wait: 0, temp:0, ignis: false};
-                npc.getStoreddata().put('elki', JSON.stringify(tmp));
+                KOCIOLEK.getStoreddata().put('elki', JSON.stringify(tmp));
                 pisz(e.player, "Wylewa eliksir z kociołka");
                 e.player.message("[§cEliksiry§f] §7Wylano eliksir! Możesz zacząć tworzyć od nowa.");
-                npc.getTimers().stop(1);
+                KOCIOLEK.getTimers().stop(1);
                 break;
             }
             case 111:{
                 // usuwanie przepisu
-                var data = npc.getStoreddata();
+                var data = KOCIOLEK.getStoreddata();
                 data.remove("przepis");
                 e.player.message("[§cKociołek§f] §7Usunięto przepis!");
                 return;
@@ -708,13 +729,19 @@ function customGuiButton(e) {
             case 201: case 202:{ var x = handleAdd(e); if(!x){return} pisz(e.player, "Wlał jakiś płyn do kociołka §7["+x.ile+"ml]"); break;}
             case 203:{ var x = handleAdd(e); if(!x){return}  var y = temp(e, parseInt(parseFloat(x.ile))); if(!y){return}  pisz(e.player, "Zwiększył temperaturę w kociołku o §7"+x.ile+"°C");  break; }
             case 204:{ var x = handleAdd(e); if(!x){return}  var y = temp(e, (-1)*(parseInt(parseFloat(x.ile)))); if(!y){return}  pisz(e.player, "Zmniejszył temperaturę w kociołku o §7"+x.ile+"°C");  break; }
-            case 205:{  var tmp = JSON.parse(npc.getStoreddata().get('elki')) || {};  if(tmp.current.ignis == true){ return e.player.message("[§cKociołek§f] §7Nie możesz podwójnie rozpalić ogniska ;0") }  npc.getTimers().forceStart(1, 90, true);   tmp.current.ignis = true;  npc.getStoreddata().put('elki', JSON.stringify(tmp));  var x = handleAdd(e); if(!x){return} pisz(e.player, "Rozpalił palenisko pod kociołkiem");  break; }
-            case 206:{  var tmp = JSON.parse(npc.getStoreddata().get('elki')) || {};  if(tmp.current.ignis == false){ return e.player.message("[§cKociołek§f] §7Już jest zgaszone palenisko!") }  npc.getTimers().stop(1);   temp(e, (-1)*tmp.current.temp); tmp.current.ignis = false;  npc.getStoreddata().put('elki', JSON.stringify(tmp));             var x = handleAdd(e); if(!x){return} pisz(e.player, "Zgasił palenisko pod kociołkiem");    break; }
+            case 205:{  var tmp = JSON.parse(KOCIOLEK.getStoreddata().get('elki')) || {};  if(tmp.current.ignis == true){ return e.player.message("[§cKociołek§f] §7Nie możesz podwójnie rozpalić ogniska ;0") }  KOCIOLEK.getTimers().forceStart(1, 90, true);   tmp.current.ignis = true;  KOCIOLEK.getStoreddata().put('elki', JSON.stringify(tmp));  var x = handleAdd(e); if(!x){return} pisz(e.player, "Rozpalił palenisko pod kociołkiem");  break; }
+            case 206:{  var tmp = JSON.parse(KOCIOLEK.getStoreddata().get('elki')) || {};  if(tmp.current.ignis == false){ return e.player.message("[§cKociołek§f] §7Już jest zgaszone palenisko!") }  KOCIOLEK.getTimers().stop(1);   temp(e, (-1)*tmp.current.temp); tmp.current.ignis = false;  KOCIOLEK.getStoreddata().put('elki', JSON.stringify(tmp));             var x = handleAdd(e); if(!x){return} pisz(e.player, "Zgasił palenisko pod kociołkiem");    break; }
             case 207:{ var x = handleAdd(e); if(!x){return} pisz(e.player, "Zamieszał w lewo §7"+x.ile+" razy"); break;}
             case 208:{ var x = handleAdd(e); if(!x){return} pisz(e.player, "Zamieszał w prawo §7"+x.ile+" razy"); break;}
             case 209:{ var x = handleAdd(e); if(!x){return} pisz(e.player, "Odstawił eliksir na §7"+x.ile+" minut "); setWait(x.ile); break;}
             case 212:{ var akcja = e.gui.getComponent(211).getText(); if(!akcja){ return e.player.message("[§cKociołek§f] §7") } addToList("AC: "+akcja, e.player); pisz(e.player, akcja); break; }
-            case 301: case 302: case 303: case 304: { /*wybierz kategorię składnika */ var text = e.gui.getComponent(e.buttonId).getLabel().replace(/§./g, ""); gui7(e.player, text); break;}
+            case 301: case 302: case 303: case 304: { 
+                /*wybierz kategorię składnika */ 
+                var text = e.gui.getComponent( e.buttonId ).getLabel().replace(/§./g, ""); 
+                var _Player = e.player;
+                gui7( _Player, text );
+                break;
+            }
             case 305:{ /* własny składnik */ gui10(e.player); break;}
             //modyfikacja składników
             case 401:{ var x = handleSkladnik(e); if(!x){return} pisz(e.player, "Zmiażdżył składnik"); break;}
@@ -732,32 +759,36 @@ function customGuiButton(e) {
             case 410:{
                 //review
                 //dodawanie przygotowanego składnika
-                var ndata = npc.getStoreddata();
+                var ndata = KOCIOLEK.getStoreddata();
                 var elki = ndata.get('elki');
                 elki = JSON.parse(elki) || {};
                 var eq = e.gui.getComponent(29);
-                if(elki.current.skladnik){
+
+                if( elki.current.skladnik ){
                     var t = Date.now();
-                    if(t-elki.current.wait < 0){
+                    if( t - elki.current.wait < 0 ){
                         pisz(e.player, "Niecierpliwy zrobił coś nie tak, a eliksir zaraz wybuchł mu przed nosem!");
-                        elki.current = { list:[], wait:0, temp:0};
-                        npc.getTimers().stop(1);
+                        elki.current = { list:[], wait:0, temp:0 };
+                        KOCIOLEK.getTimers().stop(1);
                         ndata.put('elki', JSON.stringify(elki));
-                        npc.world.playSoundAt(pos, "minecraft:entity.generic.explode", 0.5, 0.8);
-                        return npc.world.spawnParticle("explode", pos.getX()+0.5, pos.getY()+1.2, pos.getZ()+0.5, 0.3, 0.4, 0.3, 0.05, 40);
+                        KOCIOLEK.world.playSoundAt(pos, "minecraft:entity.generic.explode", 0.5, 0.8);
+                        return KOCIOLEK.world.spawnParticle("explode", pos.getX()+0.5, pos.getY()+1.2, pos.getZ()+0.5, 0.3, 0.4, 0.3, 0.05, 40);
                     }
                     var skladnik = elki.current.skladnik;
 
                     var x = "Dodaj: "+skladnik.name+" ["+skladnik.ile+" "+skladnik.jednostka+" "+skladnik.akcje.join(", ")+"]";
-                    if(!eq){ calculatePrice(e.player, skladnik); }
+                    if( !eq ){ 
+                        calculatePrice(e.player, skladnik); 
+                    }
+
                     addToList(x, e.player);
                     pisz(e.player, "Dodał wcześniej przygotowany składnik do kociołka §c"+skladnik.name);
 
                     elki = JSON.parse(ndata.get('elki'));
                     elki.current.skladnik = {};
                     ndata.put('elki', JSON.stringify(elki));
-                    npc.world.spawnParticle("splash", pos.getX()+0.5, pos.getY()+1.2, pos.getZ()+0.5, 0.2, 0.4, 0.2, 0.01, 40);
-                    npc.world.playSoundAt(pos, "minecraft:entity.generic.splash", 0.3, 1.5);
+                    KOCIOLEK.world.spawnParticle("splash", pos.getX()+0.5, pos.getY()+1.2, pos.getZ()+0.5, 0.2, 0.4, 0.2, 0.01, 40);
+                    KOCIOLEK.world.playSoundAt(pos, "minecraft:entity.generic.splash", 0.3, 1.5);
                 }else{
                     return e.player.message("[§cEliksiry§f] §7Coś poszło nie tak!");
                 }
@@ -780,13 +811,13 @@ function customGuiButton(e) {
 }
 
 function timer(e){
-    if( !npc )
+    if( !KOCIOLEK )
         return print("Nie znaleziono egzekującego bloku!");
         
     switch(e.id){
         case 1:{
             //kociołek ogień
-            npc.world.spawnParticle("largesmoke", pos.getX()+0.5, pos.getY()+2.2, pos.getZ()+0.5, 0.1, 0.7, 0.1, 0.01, 3);
+            KOCIOLEK.world.spawnParticle("largesmoke", pos.getX()+0.5, pos.getY()+2.2, pos.getZ()+0.5, 0.1, 0.7, 0.1, 0.01, 3);
             break;
         }
     }
@@ -794,7 +825,7 @@ function timer(e){
 
 function customGuiScroll(e){
     try{
-        if(!npc)
+        if(!KOCIOLEK)
             throw "Nie znaleziono egzekującego bloku!";
 
         switch(e.scrollId){
@@ -811,7 +842,7 @@ function customGuiScroll(e){
 
                 sel[1] = sel[1].split("]")[0];
                 var skladnik = {name:sel[0], ile: ile, jednostka: sel[1], akcje: [], typ:typ};
-                var ndata = npc.getStoreddata();
+                var ndata = KOCIOLEK.getStoreddata();
                 var elki = ndata.get('elki');
                 elki = JSON.parse(elki) || {};
                 if(elki.current)
@@ -846,7 +877,7 @@ function customGuiScroll(e){
                 if(!item){return e.player.message("[§cEliksiry§f] §7Nie znaleziono składnika!")}
 
                 if(item.getDisplayName().indexOf("§6Składnik Czasu")>-1){
-                    var ndata = npc.getStoreddata();
+                    var ndata = KOCIOLEK.getStoreddata();
                     var elki = JSON.parse(ndata.get("elki")) || {};
                     elki.current.wait = 0;
                     ndata.put('elki', JSON.stringify(elki));
@@ -869,7 +900,7 @@ function customGuiScroll(e){
                     }
 
                     var skladnik = {name: item.getDisplayName(), ile: ile, jednostka: sel.jednostka, akcje: [], typ:"eq"};
-                    var ndata = npc.getStoreddata();
+                    var ndata = KOCIOLEK.getStoreddata();
                     var elki = ndata.get('elki');
                     elki = JSON.parse(elki) || {};
                     if(!elki.current){ 
@@ -899,7 +930,7 @@ function customGuiScroll(e){
                     return;
 
                 //wyślij do weryfikacji
-                var tmp = npc.getStoreddata();
+                var tmp = KOCIOLEK.getStoreddata();
                 var elki = tmp.get('elki');
                 elki = JSON.parse(elki) || {};
                 var ename = e.selection[0];
@@ -907,7 +938,7 @@ function customGuiScroll(e){
 
                 var dcid = "";
                 try{
-                    dcid = npc.executeCommand("dcdid "+e.player.getName()) || "";
+                    dcid = KOCIOLEK.executeCommand("dcdid "+e.player.getName()) || "";
                     dcid = dcid.replace("\n", "").replace(/\s/g, "");
                     dcid = dcid || null;
                 }catch(er){
@@ -938,7 +969,7 @@ function customGuiScroll(e){
                         var test = addOczekujace(r, escapeString(ename), e.player.getName(), e.player.getUUID(), dcid, escapeString(JSON.stringify(elki.current.list)), elki.current.price, kociolek);
                         if(test.error) return e.player.message("[§cDebugger§f] §7Error, pisz do administracji: "+test.error); 
 
-                        var x = ver.gracz+" Wysłał eliksir do weryfikacji! kod: \`"+r+"\`, nazwa: *"+ver.nazwa+"*, cena: *"+ver.cena+"* knutów\nKociołek: "+(kociolek || "Brak danych");
+                        var x = ver.gracz+" Wysłał eliksir do weryfikacji! kod: \`"+r+"\`, nazwa: *"+ver.nazwa+"*, cena: *"+(ver.cena || 0)+"* knutów\nKociołek: "+(kociolek || "Brak danych");
                         x=ang(x);
                         HTTP.post( passes.hooks.elki ,{
                             "content": x,
@@ -946,7 +977,7 @@ function customGuiScroll(e){
                         });
                         elki.current = { list:[], wait:0, temp:0, ignis: false};
                         tmp.put('elki', JSON.stringify(elki));
-                        npc.getTimers().stop(1);
+                        KOCIOLEK.getTimers().stop(1);
                         gui1(e.player);
                         e.player.message("[§cEliksiry§f] §7Wysłano eliksir do weryfikacji! Pod ALT+G możesz sprawdzić status swoich eliksirów.");
                         return;
@@ -1014,10 +1045,11 @@ function customGuiScroll(e){
 function calculatePrice(player, skladnik){
     //skladnik : {name: nazwa, ile: 244, jednostka: gramy, akcje: [zanurz, obetnij, natnij]}
     //skladniki: {serial, nazwa, typ, cena, ilosc, jednostka, dostępny}
-    var ndata = npc.getStoreddata();
+    var ndata = KOCIOLEK.getStoreddata();
     var elki = ndata.get('elki');
     
-    var skladniki = getSkladnik({nazwa: skladnik.name});
+    var skladniki = getSkladnik({ nazwa: skladnik.name });
+
     if(skladniki.error)
         return player.message("[§cDebugger§f] §7Error, napisz do administracji: "+ skladniki.error);
     
@@ -1036,7 +1068,7 @@ function calculatePrice(player, skladnik){
 }
 
 function temp(e, ile){
-    var ndata = npc.getStoreddata();
+    var ndata = KOCIOLEK.getStoreddata();
     var elki = ndata.get('elki');
     elki = JSON.parse(elki) || {};
 
@@ -1055,7 +1087,7 @@ function temp(e, ile){
 }
 
 function handleAdd(e){
-    var ndata = npc.getStoreddata();
+    var ndata = KOCIOLEK.getStoreddata();
     var elki = ndata.get('elki');
     elki = JSON.parse(elki) || {};
     var label = e.gui.getComponent(e.buttonId).getLabel(); //button
@@ -1067,7 +1099,7 @@ function handleAdd(e){
 
             elki.current = { list:[], wait:0, temp:0, ignis: false};
             ndata.put('elki', JSON.stringify(elki));
-            npc.getTimers().stop(1);
+            KOCIOLEK.getTimers().stop(1);
             return false;
         }
     }
@@ -1102,11 +1134,11 @@ function handleAdd(e){
 }
 
 function handleSkladnik(e){
-    var ndata = npc.getStoreddata();
+    var ndata = KOCIOLEK.getStoreddata();
     var elki = ndata.get('elki');
     elki = JSON.parse(elki) || {};
 
-    if(elki.current && elki.current.skladnik){
+    if( elki.current && elki.current.skladnik ){
         var bttnText = e.gui.getComponent(e.buttonId).getLabel().replace(/§./g,"");
 
         if(elki.current.skladnik.akcje.indexOf(bttnText)>-1)
@@ -1114,8 +1146,8 @@ function handleSkladnik(e){
 
         elki.current.skladnik.akcje.push(bttnText);
 
-        ndata.put('elki', JSON.stringify(elki));
-        gui9(e.player, elki.current.skladnik);
+        ndata.put( 'elki', JSON.stringify(elki) );
+        gui9( e.player, elki.current.skladnik );
         return bttnText;
     }
     return false;
@@ -1125,7 +1157,7 @@ function setWait(ile){
     if(!ile || ile<=0 || isNaN(ile))
         return false;
 
-    var ndata = npc.getStoreddata();
+    var ndata = KOCIOLEK.getStoreddata();
     var elki = ndata.get('elki');
     elki = JSON.parse(elki) || {};
 
@@ -1141,7 +1173,7 @@ function setWait(ile){
 }
 
 function addToList(txt, player){
-    var ndata = npc.getStoreddata();
+    var ndata = KOCIOLEK.getStoreddata();
     var elki = ndata.get('elki');
     elki = JSON.parse(elki) || {};
     if(elki.current.list){
@@ -1150,8 +1182,8 @@ function addToList(txt, player){
         if(checkArray(elki.current.list, txt)){
             elki.current = {name: "", list:[], wait:0, ignis: false};
             pisz(player, "Potknął się o powietrze i wylał zawartość kociołka");
-            npc.world.spawnParticle("explode", pos.getX()+0.5, pos.getY()+1.2, pos.getZ()+0.5, 0.1, 0.4, 0.1, 0.01, 20);
-            npc.world.playSoundAt(pos, "minecraft:entity.generic.explode", 0.5, 0.8);
+            KOCIOLEK.world.spawnParticle("explode", pos.getX()+0.5, pos.getY()+1.2, pos.getZ()+0.5, 0.1, 0.4, 0.1, 0.01, 20);
+            KOCIOLEK.world.playSoundAt(pos, "minecraft:entity.generic.explode", 0.5, 0.8);
         }
     }
     return ndata.put('elki', JSON.stringify(elki));
@@ -1171,22 +1203,25 @@ function checkArray(ar,t){
     var sar = ar.slice(ar.length-5, ar.length+5);
     var i = 0;
 
-    for(var x=0; x<sar.length; x++)
+    for( var x=0; x<sar.length; x++ )
         if(sar[x]==t)
             i++;
 
-    if(i >= 5)
+    if( i >= 5 )
         return true;
 
     return false;
 }
 
 function update(e){
-    var nbt = npc.getTileEntityNBT();
+    var nbt = KOCIOLEK.getTileEntityNBT();
 
     var scripts = nbt.getList("Scripts", nbt.getListType("Scripts"))[0];
     var sl = [];
-    var requiredScripts = [ 'kociolek.js', 'postreq.js', 'sql_main.js', 'str_mani.js', 'passes.js' ];
+    var requiredScripts = [ 'postreq.js', 'sql_main.js', 'str_mani.js', 'pass.js' ];
+    if( dev === false ) {
+        requiredScripts.push('kociolek.js');
+    }
 
     for(var i=0; i < requiredScripts.length; i++){
         var test = e.API.stringToNbt('{}');
@@ -1197,6 +1232,6 @@ function update(e){
     scripts.setList("ScriptList", sl);
     nbt.setByte("ScriptEnabled", 1);
 
-    npc.world.getBlock(pos.getX(), pos.getY(), pos.getZ()).setTileEntityNBT(nbt);
+    KOCIOLEK.world.getBlock(pos.getX(), pos.getY(), pos.getZ()).setTileEntityNBT(nbt);
     data.put("update", version);
 }
