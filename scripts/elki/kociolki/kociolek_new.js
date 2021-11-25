@@ -469,6 +469,81 @@ function customGuiScroll(e){
     }
 }
 
+function customGuiButton(e) {
+    if(!e) return print("NO EVENT!!!!");
+
+    try{
+        if(!KOCIOLEK)
+            throw "Nie znaleziono egzekującego bloku!";
+
+        switch ( e.buttonId ){
+        }
+    }
+    catch(er){
+        print("Button error: "+ er);
+    }
+}
+
+
+function customGuiSlot(e){
+    try{
+
+        if(!KOCIOLEK)
+            return print("Nie znaleziono egzekującego bloku!");
+
+        switch ( e.slotId ){
+            case 0: {
+                if( e.stack.getDisplayName().indexOf("Tajemniczy eliksir:") > -1 ){
+                    var id = e.stack.getDisplayName().split(": ")[1];
+                    var zlane = getZlane(id);
+
+                    if( zlane.error || !zlane.result[0] ){
+                        e.player.message("[§cDebugger§f] §7Error, pisz do administracji: "+ zlane.error);
+                        throw zlane.error;
+                    }
+                    zlane = zlane.result[0];
+        
+                    var data = KOCIOLEK.getStoreddata();
+                    var elki = data.get("elki");
+                    elki = JSON.parse(elki) || {};
+                    elki.current = JSON.parse(zlane.json);
+                    
+                    data.put("elki",JSON.stringify(elki));
+        
+                    return getGui("eliksirCreatorMenu").show();
+                }
+                break;
+            }
+            case 1: {
+                if( e.stack.getName().indexOf("book") > -1 ){
+                    var nbt = e.stack.getNbt();
+                    if( nbt.has("przepis") ){
+                        try{
+                            var list = nbt.getList("przepis", nbt.getListType("przepis"));
+                            list = Java.from(list);
+                            list.unshift("§aPrzepis: ");
+                            list = list.join("\n§7◆ ");
+                            
+                            var data = KOCIOLEK.getStoreddata();
+                            data.put("przepis", list);
+                            e.player.message("[§cDebugger§f] §7Załadowano przepis!");
+                            
+                            return getGui("eliksirCreatorMenu").show();
+                        }
+                        catch(er){
+                            print(er);
+                            e.player.message("[§cDebugger§f] §7Nastąpił error: "+er);
+                        }
+                    }
+                }
+                return;
+            }
+        }
+    }
+    catch(er){
+        print("Slot error: "+ er);
+    }
+}
 
 
 
