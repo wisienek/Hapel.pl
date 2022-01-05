@@ -1,4 +1,4 @@
 export type CustomError = {
-    isError: boolean;
-    error: string;
-}
+  isError: boolean;
+  error: string;
+};

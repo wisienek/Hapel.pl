@@ -1,20 +1,16 @@
-var btArrOS = Java.type("java.io.ByteArrayOutputStream");
-var Buffered = Java.type("java.awt.image.BufferedImage");
-var File = Java.type("java.io.File");
-var imgIO = Java.type("javax.imageio.ImageIO");
+var btArrOS = Java.type('java.io.ByteArrayOutputStream');
+var Buffered = Java.type('java.awt.image.BufferedImage');
+var File = Java.type('java.io.File');
+var imgIO = Java.type('javax.imageio.ImageIO');
 
-function saveMap(){
-   var bImage = imgIO.read(new File("nazwa.jpg"));
-   var bos = new btArrOS();
+function saveMap() {
+  var bImage = imgIO.read(new File('nazwa.jpg'));
+  var bos = new btArrOS();
 
-   imgIO.write(bImage, "jpg", bos);
+  imgIO.write(bImage, 'jpg', bos);
 
-   var data = bos.toByteArray();
-   
-
-
+  var data = bos.toByteArray();
 }
-
 
 /* 
 import java.io.ByteArrayOutputStream;

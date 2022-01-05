@@ -1,3 +1,1 @@
-function init(e){
-    
-}
+function init(e) {}

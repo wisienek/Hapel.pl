@@ -1,16 +1,13 @@
 {
-    "303 -12 2002":{
-        "owner": "8120d-219310-dawmi //uuid",
-        "subowner": "uuid1 uuid2",
-        "claim": "claimed",
-        "exp": "12.02.2020",
-        "lvl": "0/1/2/3...10"
-    },
-    "202 -1 2005":{
-        "claim":"unclaimable",
-        "lock":"locked"
-    }
-
-
-
+  "303 -12 2002": {
+    "owner": "8120d-219310-dawmi //uuid",
+    "subowner": "uuid1 uuid2",
+    "claim": "claimed",
+    "exp": "12.02.2020",
+    "lvl": "0/1/2/3...10"
+  },
+  "202 -1 2005": {
+    "claim": "unclaimable",
+    "lock": "locked"
+  }
 }

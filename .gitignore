@@ -18,7 +18,8 @@
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
+# IDE - 
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

@@ -1,13 +1,5 @@
-
-
 const Grades = ({ user, addError }) => {
-
-
-    return (
-        <div>
-            Grades!            
-        </div>
-    )
-}
+  return <div>Grades!</div>;
+};
 
 export default Grades;

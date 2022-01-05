@@ -1,4 +1,4 @@
-import { getDatabaseClient } from './database-client';
+import { getDatabaseClient } from './database.client';
 
 export const DB_CONNECTION = 'DB_CONNECTION';
 

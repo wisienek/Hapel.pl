@@ -7,6 +7,13 @@
     "types": ["node"]
   },
   "composite": true,
-  "exclude": ["**/*.example.js", "**/*.example.ts", "**/*.spec.ts", "**/*.test.ts", "**/*.spec.js", "**/*.test.js"],
+  "exclude": [
+    "**/*.example.js",
+    "**/*.example.ts",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.spec.js",
+    "**/*.test.js"
+  ],
   "include": ["**/*.ts", "**/*.js"]
 }

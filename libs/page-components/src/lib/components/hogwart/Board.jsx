@@ -1,16 +1,5 @@
-
-
 const Board = () => {
-    return (
-        <div>
-
-
-
-
-
-
-        </div>
-    )
-}
+  return <div></div>;
+};
 
 export default Board;

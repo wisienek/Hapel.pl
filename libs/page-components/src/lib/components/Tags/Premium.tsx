@@ -1,10 +1,9 @@
-import { FaCrown } from "react-icons/fa";
+import { FaCrown } from 'react-icons/fa';
 
 export const Premium = () => {
-    return (
-        <div className="contentIcons" >
-            <FaCrown style={{ fill: "gold" }}/>
-        </div>
-    )
-}
-
+  return (
+    <div className="contentIcons">
+      <FaCrown style={{ fill: 'gold' }} />
+    </div>
+  );
+};

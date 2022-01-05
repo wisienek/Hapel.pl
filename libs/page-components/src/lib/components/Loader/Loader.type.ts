@@ -1,3 +1,3 @@
 export interface ILoaderContext {
-    isLoading: boolean;
+  isLoading: boolean;
 }

@@ -16,7 +16,7 @@ describe('DiscordBotService', () => {
     expect(service).toBeTruthy();
   });
 
-  it("Should return bot instance", () => {
+  it('Should return bot instance', () => {
     const bot = service.getBot();
 
     expect(bot).toBeDefined();

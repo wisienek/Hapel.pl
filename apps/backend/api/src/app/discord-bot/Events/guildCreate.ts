@@ -1,13 +1,13 @@
-import { Event } from "../interfaces";
+import { Event } from '../interfaces';
 
-import { registerCommands } from "../functions/registerCommands";
-import { Guild } from "discord.js";
+import { registerCommands } from '../functions/registerCommands';
+import { Guild } from 'discord.js';
 
 export const event: Event = {
-    name: "guildCreate",
-    run: async ( client, guild: Guild ) => {
-        console.info( `Dołączono do servera: ${guild.name}` );
+  name: 'guildCreate',
+  run: async (client, guild: Guild) => {
+    console.info(`Dołączono do servera: ${guild.name}`);
 
-        registerCommands(client, [guild.id]);
-    }   
-}
+    registerCommands(client, [guild.id]);
+  },
+};

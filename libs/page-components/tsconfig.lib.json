@@ -8,13 +8,6 @@
     "jsx": "react-jsx",
     "strict": true
   },
-  "exclude": [
-    "**/*.spec.ts", 
-    "**/*.test.ts"
-  ],
-  "include": [
-    "**/*.ts", "**/*.tsx", 
-    "**/*.jsx", 
-    "**/*.js"
-  ],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.jsx", "**/*.js"]
 }
