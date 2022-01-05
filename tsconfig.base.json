@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@hapel/cnpc-scripts": ["libs/cnpc-scripts/src/index.js"],
+      "@hapel/configs": ["libs/config/src/index.ts"],
+      "@hapel/database": ["libs/database/src/index.ts"],
+      "@hapel/discord-bot": ["libs/discord-bot/src/index.ts"],
+      "@hapel/page-components": ["libs/page-components/src/index.ts"],
+      "@hapel/shared": ["libs/shared/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

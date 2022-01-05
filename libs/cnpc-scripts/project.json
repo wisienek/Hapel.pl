@@ -1,0 +1,23 @@
+{
+  "root": "libs/cnpc-scripts",
+  "sourceRoot": "libs/cnpc-scripts/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/cnpc-scripts/**/*.js"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/cnpc-scripts"],
+      "options": {
+        "jestConfig": "libs/cnpc-scripts/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["scripts", "mc"]
+}

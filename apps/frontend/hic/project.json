@@ -1,0 +1,73 @@
+{
+  "root": "apps/frontend/hic",
+  "sourceRoot": "apps/frontend/hic/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/frontend/hic",
+        "index": "apps/frontend/hic/src/index.html",
+        "baseHref": "/",
+        "main": "apps/frontend/hic/src/main.tsx",
+        "polyfills": "apps/frontend/hic/src/polyfills.ts",
+        "tsConfig": "apps/frontend/hic/tsconfig.app.json",
+        "assets": [
+          "apps/frontend/hic/src/favicon.ico",
+          "apps/frontend/hic/src/assets"
+        ],
+        "styles": ["apps/frontend/hic/src/app/styles.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/frontend/hic/src/environments/environment.ts",
+              "with": "apps/frontend/hic/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "frontend-hic:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "frontend-hic:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/frontend/hic/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/frontend/hic"],
+      "options": {
+        "jestConfig": "apps/frontend/hic/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["frontend", "react"]
+}

@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/backend/hapel",
+  "sourceRoot": "apps/backend/hapel/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/backend/hapel/tsconfig.app.json"
+  },
+  "projects": {
+    "hapel": {
+      "type": "application",
+      "root": "apps/backend/hapel",
+      "entryFile": "main",
+      "sourceRoot": "apps/backend/hapel/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/backend/hapel/tsconfig.app.json"
+      }
+    },
+    "api": {
+      "type": "application",
+      "root": "apps/backend/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/backend/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/backend/api/tsconfig.app.json"
+      }
+    }
+  }
+}

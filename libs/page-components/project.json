@@ -1,0 +1,26 @@
+{
+  "root": "libs/page-components",
+  "sourceRoot": "libs/page-components/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@angular-devkit/build-angular:tslint",
+      "options": {
+        "tsConfig": [
+          "libs/page-components/tsconfig.lib.json",
+          "libs/page-components/tsconfig.spec.json"
+        ],
+        "exclude": ["**/node_modules/**", "!libs/page-components/**/*"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/page-components"],
+      "options": {
+        "jestConfig": "libs/page-components/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["frontend", "components"]
+}

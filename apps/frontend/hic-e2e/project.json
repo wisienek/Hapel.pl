@@ -1,0 +1,28 @@
+{
+  "root": "apps/frontend/hic-e2e",
+  "sourceRoot": "apps/frontend/hic-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/frontend/hic-e2e/cypress.json",
+        "devServerTarget": "frontend-hic:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "frontend-hic:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/frontend/hic-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["frontend-hic"]
+}

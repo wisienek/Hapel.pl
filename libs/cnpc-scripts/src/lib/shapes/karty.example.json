@@ -1,0 +1,557 @@
+{
+  "common": [
+    {
+      "name": "Merlin",
+      "opis": ["Merlin był średniowiecznym czarodziej z wielką mocą magiczną, który uczęszczał do szkoły Magii i Czarodziejstwa Hogwart w której reprezentował dom Salazara Slytherina."],
+      "numer": 1
+    },
+    {
+      "name": "Burdock Muldoon",
+      "opis": ["Burdock Muldoon urodzony w 1429 był piętnastowiecznym przewodniczącym Rady Magów dzisiaj", "znanymy radę magów pod nazwą Ministerstwo Magii. Podczas swojej kadencji postanowił, że każde stworzenie", "które chodzi na dwóch nogach można nazywać istotą, podczas gdy reszta zostanie zwierzętami."],
+      "numer": 10
+    },
+    {
+      "name": "Urick Oddball",
+      "opis": ["Urick Oddball żył w Średniowieczu i był bardzo dziwnym czarodziejem", "Np. nosił meduzę na głowie. Jego imię często słyszy się w żartach."],
+      "numer": 18
+    },
+    {
+      "name": "Cornelius Agrippa",
+      "opis": ["Cornelius Agrippa to kolejny średniowieczny Czarodziej pochodzący z Niemczech", "Sam Cornelius napisał wiele książek o różnych dziedzinach Magii.", "Przez to też był więziony przez mugoli W okresie nasilenia prześladowania czarodziejów", "w XV i XVI wieku"],
+      "numer": 2
+    },
+    {
+      "name": "Lord Sroddard Witchers",
+      "opis": ["Stoddard Withers ur. 1642 r. był Hodowcą Skrzydlatych koni", "Oraz próbował opracować nową grę na skrzydlatych koniach", "Zamiast mioteł, lecz ta nie zyskała popularności"],
+      "numer": 21
+    },
+    {
+      "name": "Adalbert Waffling",
+      "opis": ["Ojciec magicznych teorii ur. 1899 r. był on słynnym teoretykiem magii", "Napisał książkę używaną w Hogwarcie o tytule Teoria Magii", "Innym jego znanym osiągnięciem jest sformułowanie Fundamentalnych Praw Magii."],
+      "numer": 24
+    },
+    {
+      "name": "Perpctua Fancourt",
+      "opis": ["Perpetua Fancourt ur. 1900 r. Wynalazła Lunaskop"],
+      "numer": 25
+    },
+    {
+      "name": "Almenc Sawbridge",
+      "opis": ["Almeric Sawbridge ur. 1602 r. był brytyjskim łowcą Trolli który zabił", "Największego Trolla rzecznego w Historii Wielkiej Brytanii."],
+      "numer": 26
+    },
+    {
+      "name": "Archibald Alderton",
+      "opis": ["Archibald Alderton w 1623 wysadził całą wioskę Little Dropping"],
+      "numer": 29
+    },
+    {
+      "name": "Balfour Blane",
+      "opis": ["Balfour Blane ur. 1566 r. był założycielem komisji do spraw Eksperymentalnych Zaklęć"], 
+      "numer": 31
+    },
+    {
+      "name": "Bridget Wenlock",
+      "opis": ["Bridget Wenlock ur. 1202 r. była słynną trzynastowieczną numerolożką.", "Jako pierwsza ustaliła magiczne właściwości liczby siedem"],
+      "numer": 32
+    },
+    {
+      "name": "Beaumont Majorbanks",
+      "opis": ["Beaumont Marjoribanks ur. 1742 r. był pionierem w ziołolecznictwie", "Zebrał i sklasyfikował wiele gatunków roślin", "Przypisuje mu się odkrycie działania skrzeloziela, mimo że", "Elladora Ketteridge dokonała tego sto lat wcześniej"],
+      "numer": 33
+    },
+    {
+      "name": "Cassandra Vablafsby",
+      "opis": ["Casandra Vablatsky ur. 1894 r. była Jasnowidzką która jest", "Autorka książki Demaskowanie przyszłości niezbędnej", "uczniom Hogwartu podczas lekcji wróżbiarstwa z profesor Sybillą Trelawney."],
+      "numer": 37
+    },
+    {
+      "name": "Devlin Whitehorn",
+      "opis": ["Devlin Whitehorn ur. 1945 r.", "założył spółkę Mioteł Sportowych Nimbus powstałą w 1967 roku"],
+      "numer": 44
+    },
+    {
+      "name": "Mirinda Goshawk",
+      "opis": ["Mirinda Goshawk ur. 1921 r. autorka serii podręczników Standardowa księga zaklęć", "które służyły uczniom Hogwartu do nauki zaklęć podczas całej edukacji"],
+      "numer": 46
+    },
+    {
+      "name": "Edgar Stroulger",
+      "opis": ["Edgar Stroulger ur. 1703 r. Wynalazł wiele magicznych przedmiotów", "m.in. fałszoskop"],
+      "numer": 47
+    },
+    {
+      "name": "Gulliver Pokeby",
+      "opis": ["Gulliver Pokeby ur. 1750 r. Wybitny Magizoolog ekspert", "w dziedzinie magicznych ptaków oraz Autor książki", "Dlaczego nie zginąłem, kiedy lelek zakrzyczał", "Był pierwszym człowiekiem, który uznał, że krzyczenie", "lelków wróżebników zapowiada deszcz, a nie śmierć"],
+      "numer": 5
+    },
+    {
+      "name": "Musidora Barbwith",
+      "opis": ["Musidora Barkwith ur. 1520 r. była słynną kompozytorką."],
+      "numer": 50
+    },
+    {
+      "name": "Greta Catchlove",
+      "opis": ["Greta Catchlove ur. 1960 r. autorka pierwszej czarodziejskiej", "księgi na temat serów -Zaczaruj swój ser"],
+      "numer": 53
+    },
+    {
+      "name": "Glover Hipworth",
+      "opis": ["Glover Hipworth ur. 1742 r. Eliksirowar specjalizujący się w eliksirach zdrowotnych.", "Zasłynął odkrywając eliksir pieprzowy", "będący jednocześnie lekarstwem na katar"],
+      "numer": 58
+    },
+    {
+      "name": "Glanmore Peakes",
+      "opis": ["Glanmore Peakes Szkocki czarodziej ur. 1677 r. który zabił węża morskiego z Cromer."],
+      "numer": 6
+    },
+    {
+      "name": "Herman Wintringham",
+      "opis": ["Herman Wintringham ur. 1974 r. lutnista w popularnym czarodziejskim zespole", "Fatalne Jędze"],
+      "numer": 63
+    },
+    {
+      "name": "Jocunda Sykes",
+      "opis": ["Jocunda Sykes ur. 1915 r. jako pierwsza przeleciała na miotle", "nad Atlantykiem w 1935 roku", "Poleciała na Dębowym Gromie 79"],
+      "numer": 64
+    },
+    {
+      "name": "Justus Pilliwickle",
+      "opis": ["Justus Pilliwickle ur. 1862 r. Pracował dla Ministerstwa Magii", "i był słynnym szefem Departamentu", "Przestrzegania Prawa Czarodziejów"],
+      "numer": 67
+    },
+    {
+      "name": "Myron Wagtail",
+      "opis": ["Myron Wagtail ur. 1970 r. lider i wokalista popularnego", "czarodziejskiego zespołu Fatalne Jędze"],
+      "numer": 76
+    },
+    {
+      "name": "Orsino Thruston",
+      "opis": ["Orsino Thruston ur. 1976 r. perkusista popularnego zespołu Fatalne Jędze"],
+      "numer": 78
+    },
+    {
+      "name": "Quong Po",
+      "opis": ["Quong Po ur. 1443 r. pochodzący z Chin", "Zajmował się smokami i udało mu się znaleźć zastosowanie", "dla sproszkowanej wersji ich jaj"],
+      "numer": 81
+    },
+    {
+      "name": "Roland Kegg",
+      "opis": ["Roland Kegg ur. 1903 r. który został kapitanem", "Angielskiej narodowej drużyny gargulkowej"],
+      "numer": 84
+    },
+    {
+      "name": "Dorcas Wellbeloved",
+      "opis": ["Dorcas Wellbeloved ur. 1812 r. założyła Stowarzyszenie Zagrożonych Czarownic."],
+      "numer": 86
+    },
+    {
+      "name": "Gunhilda Gorsemoor",
+      "opis": ["Gunhilda Gorsemoor ur. 1556 r. była jednooką, garbatą uzdrowicielką,", "która wynalazła lek na smoczą ospę"],
+      "numer": 9
+    },
+    {
+      "name": "Wilfred Elphick",
+      "opis": ["Wilfred Elphick ur. 1112 r. był on pierwszym czarodziejem ugodzonymprzez buchorożca"],
+      "numer": 91
+    },
+    {
+      "name": "Heathcote Barbary",
+      "opis": ["Heathcote Barbary ur. 1974 r.g itarzysta słynnego czarodziejskiego zespołu Fatalne Jędze"],
+      "numer": 93
+    },
+    {
+      "name": "Merton Graves",
+      "opis": ["Merton Graves ur. 1978 r. wiolonczelista zespołu Fatalne Jędze"],
+      "numer": 94
+    },
+    {
+      "name": "Hengist z Woodcroft",
+      "opis": ["Hengist z Woodcroft ur. po 982 r. po wygnaniu z rodzinnego domu", "założył wieś Hogsmeade, Podobno pub Pod Trzema Miotłami", "Był tak naprawdę kiedyś jego domem."],
+      "numer": 96
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Herpon Foul",
+      "opis": ["Herpo Foul był Greckim czarnoksiężnikiem znanym pionierem w dziedzinie", "Czarnej Magii został pierwszym znanym czarodziejem który stworzył Bazyliszka oraz Horkruksa."],
+      "numer": 11
+    },
+    {
+      "name": "Salazar Slytherin",
+      "opis": ["Salazar Slytherin ur. 993 r. był jednym z założycieli Hogwartu", "Potężny Legilimenta oraz największy czarodziej tamtych czasów", "Wraz z Godrykiem Gryffindorem"],
+      "numer": 48
+    },
+    {
+      "name": "Harry Potter",
+      "opis": ["Odznaczony wszystkimi Orderami Merlina, uważany za osobę odpowiedzialną za klęskę Lorda Voldemorta."," Pogromca Bazyliszka z Komnaty Tajemnic. Były dyrektor Departamentu Tajemnic.","Zaginął podczas jednej z misji w Ameryce Południowej, od tamtego czasu nie wiadomo nic na jego temat.","Prawdopodobnie martwy."],
+      "numer": 100
+    },
+    {
+      "name": "Albus Dumbledore ",
+      "opis": ["Wybitny czarodziej półkrwi, Profesor Albus Persiwal Wulfryk Brian Dumbledore,", "Kawaler Orderu Merlina Pierwszej Klasy", "Swoja karierę w Hogwarcie zaczął od nauczyciela Transmutajci", "Następnie został wieloletnim dyrektorem Hogwartu,", "oraz przez wiele lat był naczelnym magiem Wizengamotu", "Co niektórych zdziwiło z racji iż że jego", "najlepszym przyjacielem w czasach szkolnych był sam Grindelwald", "Albus był tak uzdolniony magicznie że bały się go takie osoby jak Voldemort", "Posiadał fenixa zwanego Fawkes", "Zmarł roku 1997 na własne życzenie z dłoni Profesora Snape by następnie powstrzymać", "Lorda Woldemorta, poświęcił własne życie by ratować świat magiczny oraz szkołę"],
+      "numer": 101
+    },
+    {
+      "name": "Emil Gingerblade",
+      "opis": ["Kiedyś przestępca z bogatą przeszłością, później", "przechodząc w bojownika o wolność a następnie stając się jedną z najbogatszych", "osobowości świata magicznego. Przez długi czas drużyna", "Qudditcha pod jego przywódzctwem zdobywała większość zwycięstw."],
+      "numer": 102
+    },
+    {
+      "name": "Anna Margel",
+      "opis": ["Wieloletnia nauczycielka Historii Magii. Wiele sprzecznych plotek narodziło", "się wokół jej osobowości, oskarżając ją o wiele dobrych i złych rzeczy.", "Mówiono że dla rodziny była zdolna zrobić wszystko. Nie wiadomo do końca jak zginęła."],
+      "numer": 103
+    },
+    {
+      "name": "Marcus Maxim",
+      "opis": ["Wieloletni nauczyciel Obrony Przed Czarną Magią, oraz wicedyrektor.", "Były Minister Magii. Jako potomek rodu Ravenclaw, dumnie reprezentował mądrość i dokonał", "wielu odkryć naukowych. Zmarł prawdopodobnie w jednej z wojen z wilkołakami."],
+      "numer": 104
+    },
+    {
+      "name": "Lorcan Procter",
+      "opis": ["Mistrz Eliksirów, który przez całe swoje życie służył dla zamku Hogwart", "i jego uczniów. Został zamordowany podczas jednej ze swoich lekcji, jednak", "następnego dnia przybył niby nic na swoją lekcje jako duch.", "Do teraz naucza eliksirów w Hogwarcie."],
+      "numer": 105
+    },
+    {
+      "name": "Arvid Solberg",
+      "opis": ["Bardzo niski czarodziej który najpierw uczył w Hogwarcie, a", "następnie został jego dyrektorem. Przez pewien czas był podejrzany o kryminalną", "przeszłość jednak do końca nie dowiedziano się oficjalnie prawdy."],
+      "numer": 106
+    },
+    {
+      "name": "Marsen Wrynn",
+      "opis": ["Wykształcony smokolog i opiekun rezerwatu smoków.", "Przez pewien czas pełnił funkcje dyrektora Hogwartu,", "następnie zostając usunięty z tego stanowiska."], 
+      "numer": 107
+    },
+    {
+      "name": "Callidora Bowes",
+      "opis": ["Wynalazca gryzącego pomidora!"],
+      "numer": 108
+    },
+    {
+      "name": "Helga Hufflepuff",
+      "opis": ["Średniowieczna czarownica czystej krwi", "jedna z czterech założycieli Hogwartu", "Ceniła sobie szczerość, dobroć i przyjaźń ponad wszystko!"], 
+      "numer": 72
+    },
+    {
+      "name": "Montague Knightley",
+      "opis": ["urodzony 1506 roku czarodziej osiągnął mistrzostwo w czarodziejskich szachach", "Zmarł w 1588 roku"], 
+      "numer": 74
+    },
+    {
+      "name": "Rowena Ravenclaw",
+      "opis": ["Jedna z czterech założycieli Hogwartu oraz Posiadaczka", "słynnego diademu, obdarzającego niezwykłą mądrością", "Bardzo inteligentna oraz bystra czarownica swoich czasów", "Pochodząca ze Szkocji"],
+      "numer": 82
+    },
+    {
+      "name": "Holo Hisamatsu",
+      "opis":["Wybitna różdżkarz, zdobywca orderu Merlina III klasy za swoje osiągnięcia", "Była dyrektorka Departamentów; transportu i Magicznych Wypadków i Katastrof"],
+      "numer": 109
+    }
+  ],
+  "uncommon": [
+    {
+      "name": "Merwyn Malicious",
+      "opis": ["Był to średniowieczny czarnoksiężnik który wynalazł wiele zaklęć oraz Uroków"],
+      "numer": 12
+    },
+    {
+      "name": "Morgan le Fay",
+      "opis": ["Nazwana \"Morganą\" Znana z tego że była największym wrogiem Merlina", "Była to potężna czarownica swoich czasów"],
+      "numer": 17
+    },
+    {
+      "name": "Newt Scamander",
+      "opis": ["Jeden z największych Magizoologów odznaczony Orderem Merlina"],
+      "numer": 19
+    },
+    {
+      "name": "Wendelin Weird",
+      "opis": ["Średniowieczna czarownica spalona na stosie wraz z \"Mugolami\"", "Podającymi się za czarodziei"],
+      "numer": 20
+    },
+    {
+      "name": "Circe",
+      "opis": ["Circe była czarownicą, która mieszkała w starożytnej Grecji", " na wyspie Aeaea, znana z swoich umiejętności w Transmutacji", "ubiła transmutować zagubionych żeglarzy w zwierzęta robiła", "to tylko i wyłącznie dla zabawy"],
+      "numer": 22
+    },
+    {
+      "name": "Glenda Chittock",
+      "opis": ["Gospodarz \"Wizarding Wireless Network, Witching Hour\""],
+      "numer": 23
+    },
+    {
+      "name": "Mirabella Plunkett",
+      "opis": ["Czarownica która była w związku z Trytotem którego chciała ożenić"],
+      "numer": 27
+    },
+    {
+      "name": "Jilly Joke",
+      "opis": ["Jedna z pierwszych wynalazców psikusowych cukierków,","Na których bazowali się bracia Weasley!"],
+      "numer": 28
+    },
+    {
+      "name": "Elfrida Clagg",
+      "opis": ["Była Wodzem Rady Czarodziejów w XIV "],
+      "numer": 3
+    },
+    {
+      "name": "Artemisia Lufkin",
+      "opis": ["Minister Magii w latach 1798 do 1811 roku", "Była pierwszą kobietą, która pełniła tę funkcję"],
+      "numer": 30
+    },
+    {
+      "name": "Jocelind Wadcook",
+      "opis": ["Była to wyśmienita ścigająca w drużynie Puddlemere United"],
+      "numer": 36
+    },
+    {
+      "name": "Chawncy Oldridge",
+      "opis": ["Pierwsza znana ofiara Smoczej Ospy z braku leków na tą chorobę zmarł"],
+      "numer": 38
+    },
+    {
+      "name": "Gwenog Jones",
+      "opis": ["Słynna pałkarka i kapitanka Harpii z Hollyhead."],
+      "numer": 39
+    },
+    {
+      "name": "Grogan Stump",
+      "opis": ["Popularny Minister Magii, był na tym stanowisku od 1811 roku do 1819 roku."],
+      "numer": 4
+    },
+    {
+      "name": "Dunbar Oglethorpe",
+      "opis": ["Był szefem Unii Quidditcha ds. Poprawienia Brytyjskiej Ligii"],
+      "numer": 45
+    },
+    {
+      "name": "Elladem Ketteridge",
+      "opis": ["Odkryła magiczne właściwości Skrzeloziela"],
+      "numer": 49
+    },
+    {
+      "name": "Ethelred Ever-Ready",
+      "opis": ["Był znany z popełniania przestępstw bez powodu", "i rzucania przekleństw na niewinnych przechodniów.", "W końcu został uwięziony i zmarł w więzieniu."],
+      "numer": 51
+    },
+    {
+      "name": "Gaspard Shingleton",
+      "opis": ["Wynalazca samomieszalnego kociołka"],
+      "numer": 54
+    },
+    {
+      "name": "Henoria Nutcombe",
+      "opis": ["Założycielka Towarzystwa Reformowania Wiedźm.", "Istnieje duże prawdopodobieństwo, że sama była wiedźmą."],
+      "numer": 55
+    },
+    {
+      "name": "Gifford Ollerton",
+      "opis": ["Znany z zabicia olbrzyma Hengista z Upper Barnton.", "Po tym stał się bohaterem miasta"],
+      "numer": 57
+    },
+    {
+      "name": "Havelock Sweeting",
+      "opis": ["Ekspert w dziedzinie jednorożców"],
+      "numer": 61
+    },
+    {
+      "name": "Gondoline Oliphant ",
+      "opis": ["Znana ze swoich studiów nad życiem i zwyczajami trollów."],
+      "numer": 65
+    },
+    {
+      "name": "Flavius Belby",
+      "opis": ["Przeżył atak śmierciotuli w Papui Nowej Gwinei w 1782 roku."],
+      "numer": 66
+    },
+    {
+      "name": "Hesper Starky",
+      "opis": ["Badała, jak fazy Księżyca działają na wykonywanie eliksirów"],
+      "numer": 7
+    },
+    {
+      "name": "Mungo Bonham",
+      "opis": ["Założyciel Kliniki Magicznych Chorób i Urazów Wielkiego Munga,", "która została nazwana jego imieniem"],
+      "numer": 75
+    },
+    {
+      "name": "Norvel Twonk",
+      "opis": ["Czarodziej który poświęcił własne życie, aby ocalić mugolskie", "dziecko przed mantykorą"],
+      "numer": 77
+    },
+    {
+      "name": "Beatrix Bloxam",
+      "opis": ["Autorka sławnych Opowieści spod muchomora,", "zbioru kontrowersyjnych bajek dla dzieci."],
+      "numer": 80
+    },
+    {
+      "name": "Roderick Plumpton",
+      "opis": ["Znany gracz quidditcha, szukający Tajfunów z Tutshill na początku XX wieku"],
+      "numer": 83
+    },
+    {
+      "name": "Celestina Warbeck",
+      "opis": ["Czarownica półkrwi, która była piosenkarką znaną", "w świecie magii z Czarodziejskiej Rozgłośni Radiowej."],
+      "numer": 88
+    },
+    {
+      "name": "Xavier Rastrick",
+      "opis": ["Nieoczekiwanie zniknął zabawiając trzystu-osobową publiczność", "w Painswick. Potem nigdy go już nie widziano i", "uznano za zmarłego."],
+      "numer": 92
+    },
+    {
+      "name": "Yardley Platt",
+      "opis": ["Czarodziej, który był seryjnym mordercą goblinów."],
+      "numer": 95
+    }
+  ],
+  "rare": [
+    {
+      "name": "Andros Invicible",
+      "opis": ["Andros był znany z tego, że potrafi stworzyć Patronusa wielkości olbrzyma."],
+      "numer": 13
+    },
+    {
+      "name": "Fulbert Fearful",
+      "opis": ["Niezwykle tchórzliwy czarodziej, znany z tego, że nigdy nie opuścił swojego domu."],
+      "numer": 14
+    },
+    {
+      "name": "Cliodne",
+      "opis": ["Irlandzka driada, żyjąca w średniowieczu.", "Była animagiem zmieniającym się w morskiego ptaka."],
+      "numer": 16
+    },
+    {
+      "name": "Donaghan Tremlett",
+      "opis": ["Mugolak basista popularnego czarodziejskiego zespołu – Fatalnych Jędz."],
+      "numer": 34
+    },
+    {
+      "name": "Crispin Cronk",
+      "opis": ["Brytyjski czarodziej, szalenie zafascynowany kulturą Egiptu.", "Jego pasja urosła do tego stopnia, że zdecydował się na hodowlę", "kilku sfinksów w swoim przydomowym ogródku."],
+      "numer": 42
+    },
+    {
+      "name": "Felix Summerbee",
+      "opis": ["Wynalazca zaklęcia rozweselającego"],
+      "numer": 52
+    },
+    {
+      "name": "Gideon Crumb",
+      "opis": ["Grał na dudach w zespole Fatalne Jędze"],
+      "numer": 56
+    },
+    {
+      "name": "Ignatia Wildsmitch",
+      "opis": ["Wynalazczyni proszku Fiuu"],
+      "numer": 62
+    },
+    {
+      "name": "Kirley Duke",
+      "opis": ["Główny gitarzysta zespołu Fatalne Jędze."],
+      "numer": 68
+    },
+    {
+      "name": "Mopsus",
+      "opis": ["Jasnowid który Pokonał Calchas podczas pojedynku", "jasnowidzów i założył wyrocznią apollońską w Kolofonie."],
+      "numer": 73
+    },
+    {
+      "name": "Oswald Beamish",
+      "opis": ["Zasłynął z tego, że aktywnie działał w obronie praw goblinów."],
+      "numer": 79
+    },
+    {
+      "name": "Derwend Shimpling",
+      "opis": ["Zasłyną gdy zjadł całą jadowitą tentakulę z powodu zakładu", "i przeżył, aczkolwiek do tej pory jest fioletowy."],
+      "numer": 8
+    },
+    {
+      "name": "Blenheim Stalk",
+      "opis": ["Znany ekspert w zakresie mugoloznawstwa."],
+      "numer": 85
+    },
+    {
+      "name": "Alberta Toothill",
+      "opis": ["Wygrała Ogólno-angielski Turniej Pojedynkowania Czarodziejów", "w konkurencji pojedynków w 1430 roku."],
+      "numer": 89
+    },
+    {
+      "name": "Alberic Grunnion",
+      "opis": ["Twórca łajnobomb."],
+      "numer": 97
+    },
+    {
+      "name": "Daisy Dodderidge",
+      "opis": ["Była pierwszą właścicielką i barmanką Dziurawego Kotła"],
+      "numer": 99
+    }
+  ],
+  "ancient": [
+    {
+      "name": "Paracelsus",
+      "opis": ["Wieczny lekarz i alchemik. Jest on uznawany za odkrywcę mowy węży."],
+      "numer": 15
+    },
+    {
+      "name": "Godric Gryffindor",
+      "opis": ["Jeden z czworga legendarnych założycieli Szkoły Magii i Czarodziejstwa w Hogwarcie.", "Legenda głosi że jest Animagiem Krakena i żyje w Hogwarckim jeziorze"],
+      "numer": 41
+    },
+    {
+      "name": "Bowman Wright",
+      "opis": ["Żyjący w renesansie i zamieszkały w Dolinie Godryka", "twórca pierwszego złotego znicza."],
+      "numer": 35
+    },
+    {
+      "name": "Carletta Pinbstone",
+      "opis": ["Znana działaczka na rzecz zniesienia ustawy o tajności"],
+      "numer": 40
+    },
+    {
+      "name": "Cyprian Youdle",
+      "opis": ["Jedyny sędzia quidditcha, który został zabity podczas meczu.", "Sprawca nigdy nie został złapany"],
+      "numer": 43
+    },
+    {
+      "name": "Gregory Smarmy",
+      "opis": ["Znany średniowieczny Brytyjski Czarodziej i Eliksirowar"],
+      "numer": 59
+    },
+    {
+      "name": "Laverne de Montmorency ",
+      "opis": ["Twórczyni eliksirów, która wynalazła Eliksir Miłosny."],
+      "numer": 60
+    },
+    {
+      "name": "Bertie Bott",
+      "opis": ["Stworzył przypadkowo fasolki wszystkich smaków, dzięki czemu zyskał sławę"],
+      "numer": 69
+    },
+    {
+      "name": "Leopoldina Smethwyck",
+      "opis": ["Pierwsza Brytyjka, która została sędzią quidditcha."],
+      "numer": 70
+    },
+    {
+      "name": "Queen Maeve",
+      "opis": ["Średniowieczna czarownica z mugloskiej rodziny która poślubiła", "Mugolskiego księcia"],
+      "numer": 71
+    },
+    {
+      "name": "Thaddeus Thurkell",
+      "opis": ["Zasłynął z tego, że wszyscy spośród jego siedmiu synów byli charłakami.", "Zniesmaczony ojciec zamienił swoje potomstwo w jeże."],
+      "numer": 87
+    },
+    {
+      "name": "Sacharissa Tugwood",
+      "opis": ["Która jako pierwsza używała eliksirów piękności, a wiele z nich stworzyła sama."],
+      "numer": 90
+    },
+    {
+      "name": "Dymphna Furmage",
+      "opis": ["Znana z tego, że została uprowadzona przez chochliki", "na wakacjach w Kornwalii."],
+      "numer": 98
+    }
+  ]
+}

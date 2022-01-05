@@ -1,0 +1,2372 @@
+{
+  "elki_skladniki": {
+    "Roślinne": {
+      "Marakuja": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kora Bijącej Wierzby": {
+        "cena": "35",
+        "ilosc": "100",
+        "jednostka": "g"
+      },
+      "Czerniec Gronkowy": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skaczący Muchomor": {
+        "cena": "20",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Czarne Jagody": {
+        "cena": "1",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Aloes": {
+        "cena": "17",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liść Aloesu": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pestki Słonecznika": {
+        "cena": "5",
+        "ilosc": "21",
+        "jednostka": "szt"
+      },
+      "Liść Słonecznika": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liść Rumianku": {
+        "cena": "1",
+        "ilosc": "2",
+        "jednostka": "szt"
+      },
+      "Nasiona Kulczyby": {
+        "cena": "3",
+        "ilosc": "20",
+        "jednostka": "szt"
+      },
+      "Sok z Cytryny": {
+        "cena": "3",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Cytryna": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Pestek Cytryny": {
+        "cena": "8",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Malwa": {
+        "cena": "7",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kwiat Malwy": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Korzeń Malwy": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Malwy": {
+        "cena": "16",
+        "ilosc": "50",
+        "jednostka": "ml"
+      },
+      "Listki Jemioły": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jagody Jemioły": {
+        "cena": "3",
+        "ilosc": "2",
+        "jednostka": "szt"
+      },
+      "Galązka Waleriany": {
+        "cena": "4",
+        "ilosc": "7",
+        "jednostka": "szt"
+      },
+      "Korzeń Waleriany": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Orzech Włoski": {
+        "cena": "1",
+        "ilosc": "10",
+        "jednostka": "szt"
+      },
+      "Płatek Jaśminu": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kwiat Jaśminu": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jaśmin": {
+        "cena": "7",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Korzeń Żeń-szenia": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jabłko": {
+        "cena": "1",
+        "ilosc": "2",
+        "jednostka": "szt"
+      },
+      "Pestka z Jabłka": {
+        "cena": "1",
+        "ilosc": "8",
+        "jednostka": "szt"
+      },
+      "Sok z Jabłek": {
+        "cena": "4",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Maliny": {
+        "cena": "1",
+        "ilosc": "15",
+        "jednostka": "szt"
+      },
+      "Sok z Malin": {
+        "cena": "3",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Poziomki": {
+        "cena": "1",
+        "ilosc": "20",
+        "jednostka": "szt"
+      },
+      "Sok z Poziomek": {
+        "cena": "3",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Bazylia": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liść Bazylii": {
+        "cena": "3",
+        "ilosc": "10",
+        "jednostka": "szt"
+      },
+      "Gałka Muszkatołowa": {
+        "cena": "3",
+        "ilosc": "8",
+        "jednostka": "g"
+      },
+      "Kakao": {
+        "cena": "5",
+        "ilosc": "150",
+        "jednostka": "g"
+      },
+      "Cukier": {
+        "cena": "2",
+        "ilosc": "1000",
+        "jednostka": "g"
+      },
+      "Laska Wanilii": {
+        "cena": "3",
+        "ilosc": "2",
+        "jednostka": "szt"
+      },
+      "Cukier Waniliowy": {
+        "cena": "4",
+        "ilosc": "8",
+        "jednostka": "g"
+      },
+      "Kwiat Wanilii": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wyciąg Waniliowy": {
+        "cena": "8",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Sok z Marakui": {
+        "cena": "5",
+        "ilosc": "120",
+        "jednostka": "ml"
+      },
+      "Oliwa z Oliwek": {
+        "cena": "5",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Oliwka": {
+        "cena": "1",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Płat Kory z Drzewa Wiggen": {
+        "cena": "50",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Drzewo Wiggen": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Łopian": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Świeża Czterolistna Koniczyna": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Suszona Czterolistna Koniczyna": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Stokrotka": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Suszona Pokrzywa": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liść pokrzywy": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liść Suszonej Pokrzywy": {
+        "cena": "2",
+        "ilosc": "2",
+        "jednostka": "szt"
+      },
+      "Pokrzywa": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Korzeń Imbiru": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Dziurawiec Zwyczajny": {
+        "cena": "12",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Łodyga Dziurawca Zwyczajnego": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Figa": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Suszona Figa": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Figi": {
+        "cena": "5",
+        "ilosc": "50",
+        "jednostka": "ml"
+      },
+      "Suszona Figa Abisyńska": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Figa Abisyńska": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Figi Abisyńskiej": {
+        "cena": "6",
+        "ilosc": "50",
+        "jednostka": "ml"
+      },
+      "Wywar z Blekotu": {
+        "cena": "12",
+        "ilosc": "50",
+        "jednostka": "ml"
+      },
+      "Ząbek Czosnku": {
+        "cena": "1",
+        "ilosc": "2",
+        "jednostka": "szt"
+      },
+      "Fruwokwiat": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liście Frukokwiatu": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Róża": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Olej Różany": {
+        "cena": "22",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Ciernie Róży": {
+        "cena": "1",
+        "ilosc": "10",
+        "jednostka": "szt"
+      },
+      "Wykopieńka": {
+        "cena": "25",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Suszony Przebiśnieg": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Petunia": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ruta": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ślaz": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wrzeszczący Żonkil": {
+        "cena": "19",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Nasiona Wrzeszczących Żonkili": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Korzeń Rdestu Ptasiego": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Łodyga Rdestu Ptasiego": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ziele Rdestu Ptasiego": {
+        "cena": "4",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Wyciąg z Rdestu ptasiego": {
+        "cena": "12",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Pykostrąk": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sok z Sopophorusa": {
+        "cena": "5",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Nasiona Czyrakobulwy": {
+        "cena": "2",
+        "ilosc": "10",
+        "jednostka": "szt"
+      },
+      "Ropa z Czyrakobulwy": {
+        "cena": "7",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Kwiat Wilczej Jagody": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wilcza Jagoda": {
+        "cena": "1",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Liść Piołunu": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Nalewka z Piołunu": {
+        "cena": "8",
+        "ilosc": "50",
+        "jednostka": "ml"
+      },
+      "Piołun": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Naparstnica": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Lubczyk": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Henna": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sok z Henny": {
+        "cena": "20",
+        "ilosc": "50",
+        "jednostka": "ml"
+      },
+      "Liść Skrzeloziela": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pęd Diabelskich Sideł": {
+        "cena": "35",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Arnika": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Nasiono Mandragory": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Korzeń Mandragory": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liść Mandragory": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Suszony Liść Mandragory": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Mandragora": {
+        "cena": "20",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Nalewka z Mandragory": {
+        "cena": "10",
+        "ilosc": "20",
+        "jednostka": "ml"
+      },
+      "Krwawnik kichawiec": {
+        "cena": "9",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Durian": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liść Dyptamu": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Nasiono Dyptamu": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Tojad Mocny": {
+        "cena": "20",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kwiat Tojadu Mocnego": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Bulwa Tojadu Mocnego": {
+        "cena": "12",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Tojad Żółty": {
+        "cena": "12",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kwiat Tojadu Żółtego": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Bulwa Tojadu Żółtego": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Werbena": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Werbeny": {
+        "cena": "4",
+        "ilosc": "150",
+        "jednostka": "ml"
+      },
+      "Korzeń Ciemniernika Czarnego": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kwiat Ciemniernika Czarnego": {
+        "cena": "9",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liść Ciemniernika Czarnego": {
+        "cena": "7",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Korzeń Asfodelusa": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Liść Asfodelusa": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kwiat Asfodelusa": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Asfodelus": {
+        "cena": "18",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Mięta Pieprzowa": {
+        "cena": "2",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Sproszkowany Pieprz Cayenne": {
+        "cena": "4",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Sproszkowany Pieprz Czarny": {
+        "cena": "2",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Ziarna Pieprzu Czarnego": {
+        "cena": "1",
+        "ilosc": "20",
+        "jednostka": "szt"
+      },
+      "Ziarna Pieprzu Białego": {
+        "cena": "4",
+        "ilosc": "20",
+        "jednostka": "szt"
+      },
+      "Sproszkowany Pieprz Biały": {
+        "cena": "8",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Cebula": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Cebulica": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Gryząca cebula": {
+        "cena": "9",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Szałwia": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Nasiona Szaleju Jadowitego": {
+        "cena": "10",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Szalej Jadowity": {
+        "cena": "18",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Nasiona Tentakuli": {
+        "cena": "4",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Liść Tentakuli": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pęd Tentakuli": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Nasiona Tentakuli Jadowitej": {
+        "cena": "16",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Liść Tentakuli Jadowitej": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pęd Tentakuli Jadowitej": {
+        "cena": "17",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Tentakula Jadowita": {
+        "cena": "32",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Nasiona Jalapeno": {
+        "cena": "1",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Jalapeno": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Granat": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sok z Granatu": {
+        "cena": "5",
+        "ilosc": "120",
+        "jednostka": "ml"
+      },
+      "Granat Mandżurski": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Granatu Mandżurskiego": {
+        "cena": "4",
+        "ilosc": "20",
+        "jednostka": "ml"
+      },
+      "Lebiodka Kreteńska": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Mniszek Lekarski": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Mniszka Lekarskiego": {
+        "cena": "9",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Ślaz [Zbierany podczas pełni]": {
+        "cena": 12,
+        "ilosc": 1,
+        "jednostka": "szt"
+      },
+      "Kora Wiggen": {
+        "cena": 50,
+        "ilosc": 100,
+        "jednostka": "g"
+      },
+      "Liść Wiggen": {
+        "cena": 3,
+        "ilosc": 1,
+        "jednostka": "szt"
+      },
+      "Pestki z suszonej figi": {
+        "ilosc": "7",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Korzeń Lebiodki Kreteńskiej": {
+        "ilosc": "1",
+        "cena": "3",
+        "jednostka": "szt"
+      },
+      "Strączek Lebiodki Kreteńskiej": {
+        "ilosc": "1",
+        "cena": "3",
+        "jednostka": "szt"
+      },
+      "Ziemia Cmentarna": {
+        "ilosc": "1000",
+        "cena": "15",
+        "jednostka": "g"
+      },
+      "Składnik standardowy": {
+        "ilosc": "100",
+        "cena": "1",
+        "jednostka": "g"
+      },
+      "Gałązka lawendy": {
+        "ilosc": "1",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Duszona Bulwa Mandragory": {
+        "ilosc": "1",
+        "cena": "10",
+        "jednostka": "szt"
+      },
+      "Kwiatostan Blekotu": {
+        "ilosc": "1",
+        "cena": "4",
+        "jednostka": "szt"
+      },
+      "Maślak Sitarz": {
+        "ilosc": "1",
+        "cena": "2",
+        "jednostka": "szt"
+      },
+      "Sproszkowane Drzewo Sandałowe": {
+        "ilosc": "10",
+        "cena": "5",
+        "jednostka": "g"
+      },
+      "Owoc żurawiny": {
+        "ilosc": "100",
+        "cena": "2",
+        "jednostka": "szt"
+      },
+      "Liść Morphiusa": {
+        "ilosc": "1",
+        "cena": "10",
+        "jednostka": "szt"
+      },
+      "Kwiat przebiśniegu": {
+        "ilosc": "1",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Tentakula": {
+        "ilosc": "1",
+        "cena": "8",
+        "jednostka": "szt"
+      },
+      "Nasiona Lubczyku": {
+        "ilosc": "10",
+        "cena": "1",
+        "jednostka": "g"
+      },
+      "Liść mchu": {
+        "ilosc": "20",
+        "cena": "3",
+        "jednostka": "g"
+      },
+      "Cykuta": {
+        "ilosc": "10",
+        "cena": "10",
+        "jednostka": "ml"
+      },
+      "Fasolka Sopophorusa": {
+        "ilosc": "1",
+        "cena": "13",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Asfodelusa": {
+        "ilosc": "100",
+        "cena": "10",
+        "jednostka": "ml"
+      },
+      "Liść mięty": {
+        "ilosc": "5",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Goździk": {
+        "ilosc": "15",
+        "cena": "2",
+        "jednostka": "szt"
+      },
+      "Liść Lubczyku": {
+        "ilosc": "3",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Gałązka warzuchy": {
+        "ilosc": "1",
+        "cena": "2",
+        "jednostka": "szt"
+      },
+      "Liść grimerowca": {
+        "ilosc": "1",
+        "cena": "12",
+        "jednostka": "szt"
+      },
+      "Korzeń stokrotki": {
+        "ilosc": "1",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Kwiat Hibiskusa": {
+        "ilosc": "1",
+        "cena": "5",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Piołunu": {
+        "ilosc": "50",
+        "cena": "6",
+        "jednostka": "ml"
+      },
+      "Sok z Aloesu": {
+        "ilosc": "1",
+        "cena": "10",
+        "jednostka": "ml"
+      },
+      "Ziarno Miesięcznika": {
+        "ilosc": "5",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Żyzna ziemia": {
+        "ilosc": "1000",
+        "cena": "10",
+        "jednostka": "g"
+      },
+      "Sok z Mandragory": {
+        "ilosc": "10",
+        "cena": "15",
+        "jednostka": "ml"
+      },
+      "Liść Blekotu": {
+        "ilosc": "10",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Muchomor": {
+        "ilosc": "1",
+        "cena": "5",
+        "jednostka": "szt"
+      },
+      "Liść Miesięcznika": {
+        "ilosc": "1",
+        "cena": "5",
+        "jednostka": "szt"
+      },
+      "Syrop z Ciemiernika Czarnego": {
+        "ilosc": "50",
+        "cena": "21",
+        "jednostka": "ml"
+      },
+      "Drewno Hebanowe": {
+        "ilosc": "1",
+        "cena": "10",
+        "jednostka": "szt"
+      },
+      "Kwiat Passiflory": {
+        "ilosc": "1",
+        "cena": "3",
+        "jednostka": "szt"
+      },
+      "Grzyb Księżycowy": {
+        "ilosc": "1",
+        "cena": "13",
+        "jednostka": "szt"
+      },
+      "Liść Łopianu": {
+        "ilosc": "3",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Liść Lulka Czarnego": {
+        "ilosc": "1",
+        "cena": "6",
+        "jednostka": "szt"
+      },
+      "Sok z Jagód z Jemioły": {
+        "ilosc": "100",
+        "cena": "5",
+        "jednostka": "ml"
+      },
+      "Korzeń Konopii Siewnej": {
+        "ilosc": "1",
+        "cena": "5",
+        "jednostka": "szt"
+      },
+      "Liść Konopii Siewnej": {
+        "ilosc": "1",
+        "cena": "3",
+        "jednostka": "szt"
+      },
+      "Sok z łodygi Szczwołu Plamistego": {
+        "ilosc": "300",
+        "cena": "10",
+        "jednostka": "ml"
+      },
+      "Esencja z Szaleju Jadowitego": {
+        "ilosc": "1000",
+        "cena": "20",
+        "jednostka": "ml"
+      },
+      "Nalewka z Pięciornika Kurze Ziel": {
+        "ilosc": "1000",
+        "cena": "10",
+        "jednostka": "ml"
+      },
+      "Płatek Słonecznika": {
+        "ilosc": "1",
+        "cena": "1",
+        "jednostka": "sz"
+      },
+      "Pęd Ślazu": {
+        "ilosc": "1",
+        "cena": "6",
+        "jednostka": "szt"
+      },
+      "Czosnek": {
+        "ilosc": "1",
+        "cena": "4",
+        "jednostka": "szt"
+      },
+      "Kopr włoski": {
+        "ilosc": "100",
+        "cena": "3",
+        "jednostka": "g"
+      },
+      "Gałązka mięty": {
+        "ilosc": "1",
+        "cena": "5",
+        "jednostka": "szt"
+      },
+      "Skrzeloziele": {
+        "ilosc": "100",
+        "cena": "10",
+        "jednostka": "g"
+      },
+      "Wyciąg z bulwy mandragory": {
+        "ilosc": "50",
+        "cena": "12",
+        "jednostka": "ml"
+      },
+      "Akonityna": {
+        "ilosc": "10",
+        "cena": "30",
+        "jednostka": "ml"
+      },
+      "Olej Rycynowy": {
+        "ilosc": "50",
+        "cena": "10",
+        "jednostka": "ml"
+      },
+      "Tykwobulwa": {
+        "ilosc": "1",
+        "cena": "6",
+        "jednostka": "szt"
+      },
+      "Płatek Róży": {
+        "ilosc": "5",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Nasiono Gorczycy": {
+        "ilosc": "10",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Wyciąg z Akonitu": {
+        "ilosc": "200",
+        "cena": "15",
+        "jednostka": "ml"
+      }
+    },
+    "Nieorganiczne": {
+      "Sztuczny składnik osłabiający": {
+        "cena": "15",
+        "ilosc": "250",
+        "jednostka": "g"
+      },
+      "Sztuczny składnik czasowy": {
+        "cena": "20",
+        "ilosc": "250",
+        "jednostka": "g"
+      },
+      "Sztuczny składnik zagęszczający": {
+        "cena": "15",
+        "ilosc": "250",
+        "jednostka": "g"
+      },
+      "Rtęć": {
+        "cena": "20",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Skruszony Kamień Księżycowy": {
+        "cena": "14",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Skruszony Kamień Saargo": {
+        "cena": "4",
+        "ilosc": "8",
+        "jednostka": "g"
+      },
+      "Kryształ Rubinu": {
+        "cena": "357",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Arszenik": {
+        "cena": "8",
+        "ilosc": "50",
+        "jednostka": "g"
+      },
+      "Srebro": {
+        "cena": "120",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Sól Morska": {
+        "cena": "8",
+        "ilosc": "1000",
+        "jednostka": "g"
+      },
+      "Sól": {
+        "ilosc": "1000",
+        "cena": "3",
+        "jednostka": "g"
+      },
+      "Kamień księżycowy": {
+        "ilosc": "10",
+        "cena": "10",
+        "jednostka": "szt"
+      },
+      "Kamień Saargo": {
+        "ilosc": "10",
+        "cena": "8",
+        "jednostka": "sz"
+      },
+      "Księżycowy pył": {
+        "ilosc": "10",
+        "cena": "30",
+        "jednostka": "g"
+      },
+      "Wapń": {
+        "ilosc": "50",
+        "cena": "10",
+        "jednostka": "g"
+      },
+      "Księżycowa Rosa": {
+        "ilosc": "10",
+        "cena": "6",
+        "jednostka": "ml"
+      },
+      "Opiłki złota": {
+        "ilosc": "10",
+        "cena": "357",
+        "jednostka": "g"
+      }
+    },
+    "Bazy wodne": {
+      "Rosa": {
+        "cena": "5",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Woda zbierana o świcie z listków drzew": {
+        "cena": "6",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Woda zbierana w pełnie księżyca": {
+        "cena": "6",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Woda Solona": {
+        "cena": "3",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Woda Deszczowa": {
+        "cena": "5",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Woda Źródlana": {
+        "cena": "6",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Woda Morska": {
+        "cena": "10",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Woda Miodowa": {
+        "cena": "2",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Woda Różana": {
+        "cena": "8",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Woda Księżycowa": {
+        "cena": "20",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Woda z sadzawki": {
+        "cena": "4",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Wino Czerwone Słodkie": {
+        "cena": "16",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Absynt": {
+        "cena": "20",
+        "ilosc": "500",
+        "jednostka": "ml"
+      },
+      "Biały Rum": {
+        "cena": "25",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Winiak[Brandy]": {
+        "cena": "17",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Błoto": {
+        "cena": "1",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Mleko Krowie": {
+        "cena": "1",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Mleko Kozie": {
+        "cena": "3",
+        "ilosc": "1000",
+        "jednostka": "ml"
+      },
+      "Lód z górskiego potoku": {
+        "ilosc": "1000",
+        "cena": "6",
+        "jednostka": "ml"
+      },
+      "Woda z rzeki Lete": {
+        "ilosc": "1",
+        "cena": "80",
+        "jednostka": "ml"
+      },
+      "Czarny atrament": {
+        "ilosc": "100",
+        "cena": "1",
+        "jednostka": "ml"
+      },
+      "Wrząca woda": {
+        "ilosc": "1000",
+        "cena": "2",
+        "jednostka": "ml"
+      },
+      "Woda Miętowa": {
+        "ilosc": "1000",
+        "cena": "10",
+        "jednostka": "ml"
+      },
+      "Woda": {
+        "ilosc": "1000",
+        "cena": "1",
+        "jednostka": "ml"
+      },
+      "Wino Czerwone Wytrawne": {
+        "ilosc": "1000",
+        "cena": "18",
+        "jednostka": "ml"
+      }
+    },
+    "Zwierzęce": {
+      "Chropianek": {
+        "cena": "42",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Sproszkowane skrzydło bielika": {
+        "cena": "35",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Krew świni": {
+        "cena": "12",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Oko świni": {
+        "cena": "24",
+        "ilosc": 1,
+        "jednostka": "szt"
+      },
+      "Ośmiornica": {
+        "cena": "15",
+        "ilosc": 1,
+        "jednostka": "szt"
+      },
+      "Krew ośmiornicy": {
+        "cena": "8",
+        "ilosc": "20",
+        "jednostka": "ml"
+      },
+      "Sproszkowana ośmiornica": {
+        "cena": "18",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pancerzyk szerszenia": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Oko szerszenia": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Żądło szerszenia": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skrzydło szerszenia": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jad szerszenia": {
+        "cena": "32",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Sproszkowany szerszeń": {
+        "cena": "10",
+        "ilosc": "100",
+        "jednostka": "g"
+      },
+      "Jajo przepiórki": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sowie pióro": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sproszkowane sowie szpony": {
+        "cena": "8",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Krew Turkawki": {
+        "cena": "4",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Łza syreny": {
+        "cena": "18",
+        "ilosc": "1",
+        "jednostka": "ml"
+      },
+      "Krew Syreny": {
+        "cena": "25",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Łuska z ogona syreny": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Płetwa syreny": {
+        "cena": "50",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skrzydła motyla": {
+        "cena": "1",
+        "ilosc": "2",
+        "jednostka": "szt"
+      },
+      "Suszony motyl": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Komar": {
+        "cena": "1",
+        "ilosc": "15",
+        "jednostka": "szt"
+      },
+      "Pancerzyk Żądlibąka": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Żądło Żądlibąka": {
+        "cena": "22",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pancerzyk Żuka Wodnego": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Oko Żuka Wodnego": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skrzydło Żuka Wodnego": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Żuk Wodny": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sproszkowany Żuk Wodny": {
+        "cena": "8",
+        "ilosc": "100",
+        "jednostka": "g"
+      },
+      "Pancerzyk Żuka Polnego": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Oko Żuka Polnego": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skrzydło Żuka Polnego": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sproszkowany Żuk Polny": {
+        "cena": "8",
+        "ilosc": "100",
+        "jednostka": "g"
+      },
+      "Pancerzyk Skarabeusza": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Oko Skarabeusza": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skrzydło Skarabeusza": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skarabeusz": {
+        "cena": "9",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pancerzyk Czarnego chrząszcza": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Oko czarnego chrząszcza": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skrzydło czarnego chrząszcza": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Czarny chrząszcz": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sproszkowany czarny chrząszcz": {
+        "cena": "8",
+        "ilosc": "100",
+        "jednostka": "g"
+      },
+      "Miód": {
+        "cena": "4",
+        "ilosc": "35",
+        "jednostka": "ml"
+      },
+      "Oko Gryfa": {
+        "cena": "18",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Dziób Gryfa": {
+        "cena": "30",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Szpon Gryfa": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pióro Gryfa": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Oko Węgorza": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Noga ropuchy": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Język ropuchy": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ropucha": {
+        "cena": "12",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Oko Kameleona": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ogon Kameleona": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kameleon": {
+        "cena": "20",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Paznokieć Olbrzyma": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kręgosłup Skorpeny": {
+        "cena": "40",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Płetwa Skorpeny": {
+        "cena": "12",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skorpena": {
+        "cena": "60",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Płat skóry gnoma": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "cm_2"
+      },
+      "Oko Akromantuli": {
+        "cena": "9",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Odnóże Akromantuli": {
+        "cena": "20",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sproszkowane Muchy siatkoskrzydłe": {
+        "cena": "15",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Mucha siatkoskrzydła": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skrzydło Muchy Siatkoskrzydłej": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Róg Dwurożca": {
+        "cena": "25",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Mucha Mięsna": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Dżdżownica": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Śluz Gumochłona": {
+        "cena": "5",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Skrzydło Elfa": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jajeczko Elfa": {
+        "cena": "3",
+        "ilosc": "20",
+        "jednostka": "szt"
+      },
+      "Oko Żaby": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Noga Żaby": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Krew Żaby": {
+        "cena": "5",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Mózg Żaby": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Śledziona Żaby": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Żabi skrzek": {
+        "cena": "7",
+        "ilosc": "20",
+        "jednostka": "g"
+      },
+      "Żaba": {
+        "cena": "13",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Rogaty Ślimak": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pijawka": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sok z pijawki": {
+        "cena": "15",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Oko Nietoperza": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Język Nietoperza": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ucho Nietoperza": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Krew Nietoperza": {
+        "cena": "5",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Skrzydło Nietoperza": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Śledziona Nietoperza": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ślina Nietoperza": {
+        "cena": "15",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Nietoperz": {
+        "cena": "20",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Otwornica": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Oko Pająka": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Noga Pająka": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pająk": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pajęczyna": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skrzydło Bahanki": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Suszona Bahanka": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jad Korniczaka": {
+        "cena": "35",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Szczurzy jęzor": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Śledziona szczura": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Szczurzy ogon": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Szczurzy pazur": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Paznokieć Leprekonusa": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Złoto Leprekonusa": {
+        "cena": "6",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Nawóz Lunaballi": {
+        "cena": "45",
+        "ilosc": "1000",
+        "jednostka": "g"
+      },
+      "Skrzydło Chochlika": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Krew Ghula": {
+        "cena": "15",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Skorupa żółwia": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Krew Druzgotka": {
+        "cena": "18",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Macka Druzgotka": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pióro Dirikraka": {
+        "cena": "6",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kolec Jeżowca": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jeżowiec": {
+        "cena": "18",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pióro Memortka": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Krew Trolla": {
+        "cena": "8",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Smarki Trolla": {
+        "cena": "6",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Skóra Trolla": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "g"
+      },
+      "Ususzone serce lwa": {
+        "cena": "23",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pazur lwa": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Włos z ogona lwa": {
+        "cena": "1",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Płetwa Manty": {
+        "cena": "14",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kolec jadowy Manty": {
+        "cena": "28",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sproszkowany ogon jaszczurki": {
+        "cena": "4",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ogon jaszczurki": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jęzor jaszczurki": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jaszczurka": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pancerzyk Skolopendry": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skolopendra": {
+        "cena": "10",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Krew Kołkogonka": {
+        "cena": "35",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Śluz Toksyczka": {
+        "cena": "20",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Serce krokodyla": {
+        "cena": "30",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jad węża": {
+        "cena": "50",
+        "ilosc": "50",
+        "jednostka": "ml"
+      },
+      "Krew węża": {
+        "cena": "25",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Kieł węża": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skóra węża": {
+        "cena": "10",
+        "ilosc": "100",
+        "jednostka": "cm_2"
+      },
+      "Krew Erklinga": {
+        "cena": "34",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Igła Jeżozwierza": {
+        "cena": "1",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Kolec Jeżanki": {
+        "cena": "9",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ogon Szczuroszczeta": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Oko Diabła Morskiego": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Płetwa Diabła Morskiego": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Martwy Diabeł Morski": {
+        "cena": "25",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Żywy Diabeł Morski": {
+        "cena": "50",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Krew Salamandry": {
+        "cena": "5",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Oko Salamandry": {
+        "cena": "1",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ogon Salamandry": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Salamandra": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Wąs Kuguchara": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pazur Kuguchara": {
+        "cena": "3",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Odchody Kuguchara": {
+        "cena": "9",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Woda Kappy": {
+        "cena": "62",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Pazur Kappy": {
+        "cena": "12",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Skóra Wsiąkiewki": {
+        "cena": "20",
+        "ilosc": "1",
+        "jednostka": "cm_2"
+      },
+      "Klejnot Ognistego Kraba": {
+        "cena": "100",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Żółć Pancernika": {
+        "cena": "4",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Pancerz Pancernika": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pazur Pancernika": {
+        "cena": "2",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jajo Popiełka": {
+        "cena": "5",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Martwe Jajo Żmijoptaka": {
+        "cena": "120",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pióro Żmijoptaka": {
+        "cena": "12",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Sproszkowany dziób Żmijoptaka": {
+        "cena": "35",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Włos Kelpii": {
+        "cena": "13",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kolec jadowy Mantykory": {
+        "cena": "85",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Jad Mantykory": {
+        "cena": "300",
+        "ilosc": "20",
+        "jednostka": "ml"
+      },
+      "Płat skóry Garboroga": {
+        "cena": "80",
+        "ilosc": "1",
+        "jednostka": "cm_2"
+      },
+      "Róg Garboroga": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Ząb Garboroga": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Kieł Wampira": {
+        "cena": "40",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Krew Smoka": {
+        "cena": "35",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Łza Smoka": {
+        "cena": "100",
+        "ilosc": "1",
+        "jednostka": "ml"
+      },
+      "Mocz Smoka": {
+        "cena": "35",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Łuska Smoka": {
+        "cena": "12",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Pazur Smoka": {
+        "cena": "45",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Martwe Smocze Jajo": {
+        "cena": "220",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Włos Reema": {
+        "cena": "8",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Róg Reema": {
+        "cena": "12",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Włos Jednorożca": {
+        "cena": "40",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Włos z ogona Jednorożca": {
+        "cena": "45",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Proch Feniksa": {
+        "cena": "40",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Pazur Feniksa": {
+        "cena": "60",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Łza Trytona": {
+        "cena": "15",
+        "ilosc": "1",
+        "jednostka": "ml"
+      },
+      "Krew Trytona": {
+        "cena": "25",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Płetwa": {
+        "cena": "45",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Niewielka muszla": {
+        "cena": "1",
+        "ilosc": "5",
+        "jednostka": "szt"
+      },
+      "Krew Kudłonia": {
+        "cena": "15",
+        "ilosc": "10",
+        "jednostka": "ml"
+      },
+      "Włókno z serca borsuka": {
+        "cena": "25",
+        "ilosc": "1",
+        "jednostka": "szt"
+      },
+      "Futro Gronostaja": {
+        "cena": "12",
+        "ilosc": "10",
+        "jednostka": "g"
+      },
+      "Krew Gronostaja": {
+        "cena": "25",
+        "ilosc": "100",
+        "jednostka": "ml"
+      },
+      "Śluz Etiki": {
+        "cena": "23",
+        "ilosc": "200",
+        "jednostka": "ml"
+      },
+      "Krew Dwurożca": {
+        "ilosc": "100",
+        "cena": "20",
+        "jednostka": "ml"
+      },
+      "Róg Jednorożca": {
+        "ilosc": "1",
+        "cena": "100",
+        "jednostka": "szt"
+      },
+      "Włókno ze smoczego serca": {
+        "ilosc": "1",
+        "cena": "357",
+        "jednostka": "szt"
+      },
+      "Oko ropuchy": {
+        "ilosc": "15",
+        "cena": "1",
+        "jednostka": "g"
+      },
+      "Bezoar": {
+        "ilosc": "25",
+        "cena": "1",
+        "jednostka": "g"
+      },
+      "Piórko kolibra": {
+        "ilosc": "1",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Kolec Jeżozwierza": {
+        "ilosc": "10",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Krew Reema": {
+        "ilosc": "10",
+        "cena": "210",
+        "jednostka": "ml"
+      },
+      "Skórka Boomslanga": {
+        "ilosc": "1",
+        "cena": "21",
+        "jednostka": "szt"
+      },
+      "Krewetka": {
+        "ilosc": "1",
+        "cena": "7",
+        "jednostka": "szt"
+      },
+      "Sproszkowana muszla Toksyczka": {
+        "ilosc": "1",
+        "cena": "30",
+        "jednostka": "szt"
+      },
+      "Smocza wątroba": {
+        "ilosc": "1",
+        "cena": "30",
+        "jednostka": "szt"
+      },
+      "Gąsienica": {
+        "ilosc": "1",
+        "cena": "3",
+        "jednostka": "szt"
+      },
+      "Płynny wosk pszczeli": {
+        "ilosc": "500",
+        "cena": "5",
+        "jednostka": "ml"
+      },
+      "Pazur Hipogryfa": {
+        "ilosc": "1",
+        "cena": "20",
+        "jednostka": "szt"
+      },
+      "Sproszkowany Skarabeusz": {
+        "ilosc": "1",
+        "cena": "11",
+        "jednostka": "szt"
+      },
+      "Jajo Bahanki": {
+        "ilosc": "1",
+        "cena": "2",
+        "jednostka": "szt"
+      },
+      "Odwłoki ważki": {
+        "ilosc": "300",
+        "cena": "4",
+        "jednostka": "g"
+      },
+      "Latający Konik Morski": {
+        "ilosc": "1",
+        "cena": "5",
+        "jednostka": "szt"
+      },
+      "Łuska Trytona": {
+        "ilosc": "1",
+        "cena": "8",
+        "jednostka": "szt"
+      },
+      "Róg Buchorożca": {
+        "ilosc": "1",
+        "cena": "30",
+        "jednostka": "szt"
+      },
+      "Pióro Samicy Turkawki": {
+        "ilosc": "1",
+        "cena": "2",
+        "jednostka": "szt"
+      },
+      "Pióro Samca Turkawki": {
+        "ilosc": "1",
+        "cena": "2",
+        "jednostka": "szt"
+      },
+      "Perła": {
+        "ilosc": "1",
+        "cena": "100",
+        "jednostka": "szt"
+      },
+      "Skrzydło Białego Motyla": {
+        "ilosc": "1",
+        "cena": "1",
+        "jednostka": "szt"
+      },
+      "Mleko Wili": {
+        "ilosc": "1",
+        "cena": "60",
+        "jednostka": "ml"
+      },
+      "Włos Wili": {
+        "ilosc": "1",
+        "cena": "50",
+        "jednostka": "szt"
+      }
+    }
+  }
+}

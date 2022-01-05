@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "projects": {
+    "backend-api": "apps/backend/api",
+    "cnpc-scripts": "libs/cnpc-scripts",
+    "config": "libs/config",
+    "database": "libs/database",
+    "frontend-hic": "apps/frontend/hic",
+    "frontend-hic-e2e": "apps/frontend/hic-e2e",
+    "page-components": "libs/page-components",
+    "shared": "libs/shared"
+  }
+}
