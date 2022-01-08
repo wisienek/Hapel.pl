@@ -1,0 +1,19 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "username",
+    "password": "password",
+    "charset": "utf8",
+    "database": "database",
+    "entities": [
+        "C:\\path\\to\\Hapel.pl workspace\\hapel\\libs\\database\\**\\*.entity.{js,ts}"
+    ],
+    "migrationsTableName": "migrations",
+    "migrations": [
+      "migrations\\*.ts"
+    ],
+    "cli": {
+      "migrationsDir": "migrations"
+    }
+  }

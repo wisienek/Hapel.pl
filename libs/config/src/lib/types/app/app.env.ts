@@ -20,11 +20,6 @@ export class AppEnv {
   @Expose()
   APP_SECRET: string;
 
-  @IsString()
-  @NotEquals('')
-  @Expose()
-  APP_REFRESH_SECRET: string;
-
   @IsEnum(LogLevel)
   @Expose()
   APP_LOG_LEVEL: LogLevel = LogLevel.INFO;

@@ -2,3 +2,6 @@
 
 /dist
 /coverage
+
+# js cnpc files
+/libs/cnpc-scripts/**/*.js

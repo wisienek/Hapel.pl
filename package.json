@@ -14,8 +14,6 @@
     "format:check": "nx format:check",
     "dep-graph": "nx dep-graph",
     "update": "nx migrate latest",
-    "typeorm": "ts-node ./node_modules/typeorm/cli.js",
-    "db:config": "ts-node -r tsconfig-paths/register tools/db-utils/orm-config.ts",
     "migration:generate": "npm run build && npm run typeorm migration:generate -- -n",
     "migration:run": "npm run build && npm run typeorm migration:run"
   },
@@ -58,6 +56,7 @@
     "rxjs": "^7.0.0",
     "socket.io": "^4.4.0",
     "style-loader": "^3.3.1",
+    "swagger-ui-express": "^4.3.0",
     "tailwind": "^4.0.0",
     "tslib": "^2.0.0",
     "typeorm": "^0.2.41",
@@ -109,6 +108,7 @@
     "react-test-renderer": "17.0.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "ts-jest": "27.0.5",
+    "ts-node": "^10.4.0",
     "tslint": "~6.1.0",
     "typescript": "~4.4.3"
   }

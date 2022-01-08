@@ -13,10 +13,6 @@ export class AppConfig extends BaseConfig<'APP'> {
     return this.variables.APP_SECRET;
   }
 
-  get REFRESH_SECRET(): string {
-    return this.variables.APP_REFRESH_SECRET;
-  }
-
   get LOG_LEVEL(): string {
     return this.variables.APP_LOG_LEVEL;
   }

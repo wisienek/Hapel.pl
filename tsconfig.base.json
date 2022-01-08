@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@hapel/cnpc-scripts": ["libs/cnpc-scripts/src/index.js"],
+      "@hapel/cnpc-scripts": ["libs/cnpc-scripts/src/index.ts"],
       "@hapel/configs": ["libs/config/src/index.ts"],
       "@hapel/database": ["libs/database/src/index.ts"],
       "@hapel/discord-bot": ["libs/discord-bot/src/index.ts"],
