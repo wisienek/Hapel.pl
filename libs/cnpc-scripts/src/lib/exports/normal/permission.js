@@ -16,7 +16,7 @@ var Permission = {
           permissions[i].getPermission().indexOf(permission) > -1) ||
         !permission
       ) {
-        valid.push(permissions[i].getPermission()); // permission name i.e.: maxbans.ban
+        valid.push(permissions[i].getPermission()); // permission name i.e.: litebans.ban
       }
     }
     return valid;

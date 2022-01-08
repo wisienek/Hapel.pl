@@ -411,7 +411,7 @@ function customGuiScroll(e) {
         if (inf == 'Usuń') {
           if (
             autor == e.player.getName() ||
-            Permission.has(e.player.getName(), 'maxbans.ban')
+            Permission.has(e.player.getName(), 'litebans.ban')
           ) {
             var test = removePrzepis(id);
             if (test.error) {

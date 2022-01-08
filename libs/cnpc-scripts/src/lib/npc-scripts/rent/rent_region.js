@@ -28,7 +28,7 @@ new Gui('start', function (e) {
   gui.addLabel(id('txtStart'), 'Rentowanie', 65, 10, 100, 20);
   gui.addButton(id('goRent'), 'Rentuj', 40, 40, 100, 20);
 
-  if (pl.hasPermission('maxbans.ban'))
+  if (pl.hasPermission('litebans.ban'))
     gui.addButton(id('goAdmin'), 'Admin', 40, 60, 100, 20);
 
   e.player.showCustomGui(gui);

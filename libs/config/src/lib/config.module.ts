@@ -1,7 +1,6 @@
 import { DynamicModule, Module, Provider } from '@nestjs/common';
 import { ClassConstructor } from 'class-transformer';
 import { ConfigService } from './config.service';
-
 import { BaseConfig } from './types/base.config';
 import { ConfigType } from './types/config.type';
 
