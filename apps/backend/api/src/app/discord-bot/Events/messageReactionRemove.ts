@@ -1,11 +1,15 @@
 import { GuildMember, MessageReaction } from 'discord.js';
+import { DiscordBotService } from '../discord-bot.service';
 
-import botClient from '../Client';
 import { Event } from '../interfaces';
 
 export const event: Event = {
   name: 'messageReactionRemove',
-  async run(client: botClient, reaction: MessageReaction, user: GuildMember) {
+  async run(
+    client: DiscordBotService,
+    reaction: MessageReaction,
+    user: GuildMember
+  ) {
     const emoji = reaction.emoji.name;
     const messageid = reaction.message.id;
 

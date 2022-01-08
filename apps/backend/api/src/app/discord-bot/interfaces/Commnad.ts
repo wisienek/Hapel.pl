@@ -1,4 +1,3 @@
-import Bot from '../Client';
 import {
   PermissionResolvable,
   CommandInteraction,
@@ -6,9 +5,10 @@ import {
 } from 'discord.js';
 import { OptionType } from './OptionType';
 import { ChannelType } from 'discord-api-types';
+import { DiscordBotService } from '../discord-bot.service';
 
 type args = {
-  client: Bot;
+  client: DiscordBotService;
   message: CommandInteraction;
   args?: string[];
 };

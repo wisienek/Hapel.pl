@@ -1,11 +1,11 @@
 import { CommandInteraction } from 'discord.js';
-import botClient from '../Client';
+import { DiscordBotService } from '../discord-bot.service';
 import { Command } from '../interfaces';
 
 export const canRunCommand: (
   i: CommandInteraction,
   c: Command,
-  b: botClient
+  b: DiscordBotService
 ) => Promise<boolean> = async (
   interaction: CommandInteraction,
   command: Command

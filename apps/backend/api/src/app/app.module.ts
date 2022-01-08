@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { AppConfig, ConfigModule, DbConfig } from '@hapel/configs';
 import { AppService } from './app.service';
@@ -10,10 +9,13 @@ import { DatabaseModule } from '@hapel/database';
 
 @Module({
   imports: [
-    ConfigModule.forConfigs([AppConfig, DbConfig]),
+    ConfigModule.forConfigs([
+      AppConfig,
+      //DbConfig
+    ]),
     SchedulerModule,
-    DatabaseModule,
-    // DiscordBotModule
+    //DatabaseModule,
+    DiscordBotModule,
   ],
   controllers: [AppController],
   providers: [AppService],

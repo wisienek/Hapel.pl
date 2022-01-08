@@ -32,55 +32,56 @@ export const command: Command = {
     },
   ],
   run: async ({ client, message }) => {
-    if (message?.options?.data?.length == 4) {
-      const channel = message.options.getChannel('kanał');
-      const msgLink = message.options.getString('msg_id');
-      const emoji = message.options.getString('emoji');
-      const role = message.options.getRole('rola');
+    // if (message?.options?.data?.length == 4) {
+    //   const channel = message.options.getChannel('kanał');
+    //   const msgLink = message.options.getString('msg_id');
+    //   const emoji = message.options.getString('emoji');
+    //   const role = message.options.getRole('rola');
 
-      const fetchedChannel =
-        client.Channels.get(channel.id) ||
-        ((await message.guild.channels.fetch(channel.id)) as TextChannel);
-      if (!fetchedChannel) return message.reply('Nie znaleziono kanału!');
+    //   const fetchedChannel =
+    //     client.Channels.get(channel.id) ||
+    //     ((await message.guild.channels.fetch(channel.id)) as TextChannel);
+    //   if (!fetchedChannel) return message.reply('Nie znaleziono kanału!');
 
-      const fetchedMessage =
-        client.Messages.get(msgLink) ||
-        (await fetchedChannel.messages.fetch(msgLink));
-      if (!fetchedMessage) return message.reply('Nie znaleziono wiadomości!');
+    //   const fetchedMessage =
+    //     client.Messages.get(msgLink) ||
+    //     (await fetchedChannel.messages.fetch(msgLink));
+    //   if (!fetchedMessage) return message.reply('Nie znaleziono wiadomości!');
 
-      const reacted = await fetchedMessage.react(emoji);
-      if (!reacted?.count)
-        return message.reply('Nie można było zareagować na wiadomość!');
+    //   const reacted = await fetchedMessage.react(emoji);
+    //   if (!reacted?.count)
+    //     return message.reply('Nie można było zareagować na wiadomość!');
 
-      const isadded: Listener | null = await client.db.listener.findFirst({
-        where: {
-          guild: message.guild.id,
-          channel: channel.id,
-          emoji,
-          role: role.id,
-        },
-      });
+    //   const isadded: Listener | null = await client.db.listener.findFirst({
+    //     where: {
+    //       guild: message.guild.id,
+    //       channel: channel.id,
+    //       emoji,
+    //       role: role.id,
+    //     },
+    //   });
 
-      if (isadded)
-        return message.reply(`Jest już taki listener ||id: ${isadded.id}|| !`);
+    //   if (isadded)
+    //     return message.reply(`Jest już taki listener ||id: ${isadded.id}|| !`);
 
-      const item: Listener = await client.db.listener.create({
-        data: {
-          guild: message.guild.id,
-          channel: channel.id,
-          message: msgLink,
-          emoji,
-          role: role.id,
-        },
-      });
+    //   const item: Listener = await client.db.listener.create({
+    //     data: {
+    //       guild: message.guild.id,
+    //       channel: channel.id,
+    //       message: msgLink,
+    //       emoji,
+    //       role: role.id,
+    //     },
+    //   });
 
-      client.reactionListeners.push(item);
+    //   client.reactionListeners.push(item);
 
-      message.reply(
-        `Zapisano listener na kanale: <#${channel.id}> emotka: ${emoji} daje rolę: ${role.name}!`
-      );
-    } else {
-      return message.reply('Za mało argumentów ;v');
-    }
+    //   message.reply(
+    //     `Zapisano listener na kanale: <#${channel.id}> emotka: ${emoji} daje rolę: ${role.name}!`
+    //   );
+    // } else {
+    //   return message.reply('Za mało argumentów ;v');
+    // }
+    return message.reply('OK');
   },
 };

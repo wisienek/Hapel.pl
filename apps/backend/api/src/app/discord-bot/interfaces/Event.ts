@@ -1,8 +1,8 @@
-import Bot from '../Client';
 import { ClientEvents } from 'discord.js';
+import { DiscordBotService } from '../discord-bot.service';
 
 interface Run {
-  (client: Bot, ...args: any[]);
+  (client: DiscordBotService, ...args: any[]);
 }
 
 export interface Event {

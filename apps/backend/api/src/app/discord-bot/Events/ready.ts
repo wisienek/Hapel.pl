@@ -6,9 +6,10 @@ import { registerCommands } from '../functions/registerCommands';
 export const event: Event = {
   name: 'ready',
   run: async (client) => {
-    console.info(`${client.user.username} online!`);
+    client.logger.log(`${client.user.username} online!`);
+    
     client.guilds.cache.forEach((guild: Guild) => {
-      console.info(`Hapel-Ic załadował ${guild.name}`);
+      client.logger.log(`Hapel-Ic załadował ${guild.name}`);
     });
 
     for (const listener of client.reactionListeners) {

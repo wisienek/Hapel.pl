@@ -2,14 +2,15 @@ import { Command, CommandList } from '../interfaces';
 
 import { REST } from '@discordjs/rest';
 import { Routes } from 'discord-api-types/v9';
-import botClient from '../Client';
+import { DiscordBotService } from '../discord-bot.service';
+import { AppConfig } from '@hapel/configs';
 
-const rest = new REST({ version: '9' }).setToken(process.env.TOKEN1);
+const rest = new REST({ version: '9' }).setToken(new AppConfig().SECRET);
 
 export const registerCommands: (
-  client: botClient,
+  client: DiscordBotService,
   guildIds?: string[]
-) => void = (client: botClient, guildIds: string[]) => {
+) => void = (client: DiscordBotService, guildIds: string[]) => {
   const guilds = client.guilds.cache;
   const builtCommands: Partial<Command>[] = client.commands.map(
     (command: Command) => {
@@ -56,6 +57,6 @@ export const registerCommands: (
           }
         });
       })
-      .catch(console.error);
+      .catch(client.logger.error);
   }
 };
